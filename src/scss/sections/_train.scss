@@ -1,0 +1,49 @@
+.train {
+  
+  padding: 60px 0;
+  background-color: $secondColor;
+
+  // .train__title
+  &__title {
+    color: $textAccentColor;
+    margin-bottom: 60px;
+   
+  }
+  // .train__content
+  &__content {
+    @include flex(space-between);
+    
+    max-width: 1440px;
+    margin: 0 auto;
+    
+  }
+  // .train__box
+  &__box {
+    @include flex(center, center);
+    position: relative;
+ 
+    
+    
+    picture{
+     
+      width: 100%;
+      height: 100%;
+    }
+  }
+  // .train__img
+  &__img {
+   
+    width: 100%;
+    height: 100%;
+  }
+  // .train__subtitle
+  &__subtitle {
+    position: absolute;
+    z-index: 1;
+left: 50%;
+top: 46%;
+transform: translateX(-50%);
+
+    text-align: center;
+  }
+}

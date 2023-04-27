@@ -1,0 +1,106 @@
+.trainer {
+  padding: 80px 0 50px;
+
+  // .trainer__title
+  &__title {
+    margin-bottom: 40px;
+  }
+  // .trainer__list
+  &__list {
+    @include flex(space-between, center, wrap);
+    gap: 10px;
+  }
+  // .trainer__tab
+  &__tab {
+    @include flex(center, center);
+
+    background-color: #484848;
+    border-radius: 33px;
+    width: 274px;
+    height: 42px;
+    font-family: "ProximaNova-Regular";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+
+    color: $textMainColor;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background: #fff;
+      color: $textAccentColor;
+    }
+  }
+
+  .content {
+    margin-top: 55px;
+  }
+  .tabpanel {
+    display: none;
+  }
+  .tabpanel.active {
+    display: block;
+  }
+  .swiper {
+    // .swiper__item
+    &__item {
+      @include flex(center, center, $flex-direction: column);
+      padding: 33px 30px 20px;
+      max-width: 350px;
+      background-color: $secondColor;
+      border: 2px solid $mainColor;
+      border-radius: 30px;
+    }
+
+    // .swiper__box-img
+    &__box-img {
+      max-width: 348px;
+      align-self: center;
+      margin-bottom: 32px;
+      img,
+      picture {
+        width: 100%;
+      }
+    }
+
+    // .swiper__box-content
+    &__box-content {
+      @include flex(space-between, $flex-direction: column);
+
+      align-self: flex-start;
+      margin-bottom: 15px;
+    }
+    // .swiper__subtitle
+    &__subtitle {
+      font-size: 22px;
+      line-height: 24px;
+      text-align: center;
+
+      color: $textAccentColor;
+      text-align: left;
+    }
+    // .swiper__job
+    &__job {
+      font-family: "ProximaNova-Regular";
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+
+      color: $textAccentColor;
+    }
+    // .swiper__btn
+    &__btn {
+      padding: 15px 18px;
+
+      border-radius: 35px;
+      text-align: center;
+      font-size: 20px;
+      line-height: 20px;
+
+      &:hover {
+        background-color: $mainColor;
+      }
+    }
+  }
+}

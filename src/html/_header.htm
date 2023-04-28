@@ -1,113 +1,121 @@
 <header class="header">
-  <div class="container header__wrapper">
-    <div class="header__top">
-      <a href="index.html" class="header__logo logo">
-        <img src="@img/icons/logo.svg" alt="logo" class="logo__img" />
-      </a>
-      <div class="header__box header__box--map">
-        <span class="header__span">Тушинская, 17 </span>
-        <span class="header__span">ТЦ Праздник 5 этаж</span>
-      </div>
-      <div class="header__box header__box--metro">
-        <span class="header__span">2 минуты от </span>
-        <span class="header__span"> м. «Тушинская»</span>
-      </div>
-
-      <div class="header__box header__box--time">
-        <span class="header__span">Пн-Пт 6:30-24:00 </span>
-        <span class="header__span"> Сб-Вс 8:30-22:00</span>
-      </div>
-      <div class="header__box header__box--time">
-        <a href="tel:+74992830153" class="header__link">
-          <span class="header__span">+7 (499) 283-01-53 </span>
-        </a>
-        <a href="tel:+74992834431" class="header__link">
-          <span class="header__span">+7 (499) 283-44-31 </span>
+  <div class="container ">
+    <div class="header__wrapper pt-3 px-xl-0 row  h-100 text-nowrap align-items-center gy-3">
+      <div class="col-2 col-lg-2">
+        <a href="index.html" class="header__logo logo">
+          <img src="@img/icons/logo.svg" alt="logo" class="mw-100 logo__img" />
         </a>
       </div>
-
-      <div class="header__btn btn">
-        <a href="#" role="button">Вход</a>
+      <div class="col-lg-2">
+        <div class="header__box header__box--map fs-14 fw-400">
+          <span class="header__span d-block">Тушинская, 17 </span>
+          <span class="header__span d-block">ТЦ Праздник 5 этаж</span>
+        </div>
       </div>
-      <button type="button" class="header__burger burger button">
+      <div class="col-2 ps-4 d-none d-lg-block">
+        <div class="header__box header__box--metro fs-14 fw-400">
+          <span class="header__span d-block">2 минуты от </span>
+          <span class="header__span d-block">м. «Тушинская»</span>
+        </div>
+      </div>
+      <div class="col-2 d-none d-lg-block">
+        <div class="header__box header__box--time fs-14 fw-400">
+          <span class="header__span d-block">Пн-Пт 6:30-24:00 </span>
+          <span class="header__span d-block">Сб-Вс 8:30-22:00</span>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="header__box header__box--tel fs-14 fw-400">
+          <a href="tel:+74992830153" class="header__link d-block">
+            <span class="header__span">+7 (499) 283-01-53 </span>
+          </a>
+          <a href="tel:+74992834431" class="header__link d-block">
+            <span class="header__span">+7 (499) 283-44-31 </span>
+          </a>
+        </div>
+      </div>
+      <div class="header__btn header__btn--enter btn col-1 fs-14 fw-600 col btn-primary btn-sm py-2 d-flex ">
+        <a href="#" role="button" class="d-block text-right"
+          >Вход</a
+        >
+      </div>
+      <button
+        type="button"
+        class="col-1 col-open d-block d-lg-none header__burger burger button"
+      >
         <span class="burger__inner">
           <span></span>
         </span>
       </button>
-    </div>
-    <div class="header__bottom">
-      <nav class="header__Nav nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#about" class="nav__link">О клубе</a>
+      
+      <nav
+        class="header__menu col-12 col-lg-9 pe-5"
+      >
+        <ul
+          class="header__list d-flex h-100 flex-column flex-lg-row justify-content-center justify-content-lg-between text-nowrap"
+        >
+          <li class="header__item py-1 py-lg-0">
+            <a href="#about" class="header__link d-block text-center">О клубе</a>
           </li>
-          <li class="nav__item">
-            <a href="#services" class="nav__link">Услуги</a>
-            <ul>
-              <li class="py-1 py-lg-0">
-                <a href="#">Тренажерный зал</a>
-              </li>
 
-              <li class="py-1 py-lg-0">
-                <a href="#">Бассейн общий</a>
+          <li class="header__item header__item--parent py-1 py-lg-0">
+            <a href="#services" class="header__link d-block text-center">Услуги</a>
+            <ul class="header__list-child d-none">
+              <li class="header__item-child py-1 py-lg-0">
+                <a href="#" class="header__link-child d-block text-center">Тренажерный зал</a>
               </li>
-
-              <li class="py-1 py-lg-0">
-                <a href="#">Бассейн для женщин</a>
+              <li class="header__item-child py-1 py-lg-0">
+                <a href="#" class="header__link-child d-block text-center">Бассейн общий</a>
               </li>
-
-              <li class="py-1 py-lg-0">
-                <a href="#">Бассейн для грудничкового плавания</a>
+              <li class="header__item-child py-1 py-lg-0">
+                <a href="#" class="header__link-child d-block text-center">Бассейн для женщин</a>
               </li>
-
-              <li class="py-1 py-lg-0">
-                <a href="#">Детский клуб</a>
+              <li class="header__item-child py-1 py-lg-0">
+                <a href="#" class="header__link-child d-block text-center"
+                  >Бассейн для грудничкового плавания</a
+                >
               </li>
-
-              <li class="py-1 py-lg-0">
-                <a href="#">Зона кроссфит</a>
-              </li>
-
-              <li class="py-1 py-lg-0">
-                <a href="#">Групповые программы</a>
-              </li>
-
-              <li class="py-1 py-lg-0">
-                <a href="#">Студия Пилатес</a>
-              </li>
-
-              <li class="py-1 py-lg-0">
-                <a href="#">ММА</a>
-              </li>
-
-              <li class="py-1 py-lg-0">
-                <a href="#">Тхеквандо</a>
-              </li>
-
-              <li class="py-1 py-lg-0">
-                <a href="#">Футбол</a>
+              <li class="header__item-child py-1 py-lg-0">
+                <a href="#" class="header__link-child d-block text-center">Детский клуб</a>
               </li>
             </ul>
           </li>
-          <li class="nav__item">
-            <a href="#shedule" class="nav__link">Расписание</a>
+          <li class="header__item header__item--parent py-1 py-lg-0">
+            <a href="#shedule" class="header__link d-block text-center">Расписание</a>
+            <ul class="header__list-child d-none">
+              <li class="header__item-child py-1 py-lg-0">
+                <a href="#" class="header__link-child d-block text-center">Групповые программы</a>
+              </li>
+              <li class="header__item-child py-1 py-lg-0">
+                <a href="#" class="header__link-child d-block text-center">Водные программы</a>
+              </li>
+              <li class="header__item-child py-1 py-lg-0">
+                <a href="#" class="header__link-child d-block text-center"
+                  >Восточные единоборства</a
+                >
+              </li>
+              <li class="header__item-child py-1 py-lg-0">
+                <a href="#" class="header__link-child d-block text-center">Детский фитнес</a>
+              </li>
+              <li class="header__item-child py-1 py-lg-0">
+                <a href="#" class="header__link-child d-block text-center">Футбольные зоны</a>
+              </li>
+            </ul>
           </li>
-          <li class="nav__item">
-            <a href="#kards" class="nav__link">Клубные карты</a>
+
+          <li class="header__item py-1 py-lg-0">
+            <a href="#kards" class="header__link d-block text-center">Клубные карты</a>
           </li>
-          <li class="nav__item">
-            <div class="header__btn btn">
-              <a href="#team">Команда</a>
-            </div>
+          <li class="header__item py-1 py-lg-0">
+            <a href="#team" class="header__link d-block text-center">Команда</a>
           </li>
-          <li class="nav__item">
-            <a href="#contacts" class="nav__link">Контакты</a>
+          <li class="header__item py-1 py-lg-0">
+            <a href="#contacts" class="header__link d-block text-center">Контакты</a>
           </li>
         </ul>
       </nav>
-
-      <ul class="header__social-list">
-        <li class="header__social-item">
+      <ul class="header__social-list d-flex align-items-center mb-0 px-3 justify-content-between col">
+        <li class="header__social-item rounded-circle d-flex justify-content-center align-items-center">
           <a href="#" class="header__social-link">
             <svg
               width="15"
@@ -130,7 +138,7 @@
             </svg>
           </a>
         </li>
-        <li class="header__social-item">
+        <li class="header__social-item rounded-circle d-flex justify-content-center align-items-center">
           <a href="#" class="header__social-link">
             <svg
               width="11"
@@ -151,8 +159,8 @@
           </a>
         </li>
       </ul>
-      <div class="header__btn btn">
-        <a data-popup="#callback" href="#callback" role="button"
+      <div class="header__btn header__btn--mail fs-16 fw-500 btn text-white  col-2 px-0 d-block">
+        <a data-popup="#callback" href="#callback" role="button" data-bs-toggle="modal" data-bs-target="#orderModal"
           >Написать нам</a
         >
       </div>

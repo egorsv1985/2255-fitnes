@@ -1,12 +1,12 @@
 <header class="header">
   <div class="container ">
-    <div class="header__wrapper pt-3 px-xl-0 row  h-100 text-nowrap align-items-center gy-3">
-      <div class="col-2 col-lg-2">
+    <div class="header__wrapper pt-3 px-xl-0 row  h-100 text-nowrap justify-content-between align-items-center gy-3 gx-3 gx-lg-0">
+      <div class="col-4  col-md-3 col-lg-3">
         <a href="index.html" class="header__logo logo">
           <img src="@img/icons/logo.svg" alt="logo" class="mw-100 logo__img" />
         </a>
       </div>
-      <div class="col-lg-2">
+      <div class="col-5 col-md-3 col-lg-2">
         <div class="header__box header__box--map fs-14 fw-400">
           <span class="header__span d-block">Тушинская, 17 </span>
           <span class="header__span d-block">ТЦ Праздник 5 этаж</span>
@@ -24,7 +24,7 @@
           <span class="header__span d-block">Сб-Вс 8:30-22:00</span>
         </div>
       </div>
-      <div class="col-2">
+      <div class="col-3 col-lg-2 d-none d-md-block">
         <div class="header__box header__box--tel fs-14 fw-400">
           <a href="tel:+74992830153" class="header__link d-block">
             <span class="header__span">+7 (499) 283-01-53 </span>
@@ -34,22 +34,15 @@
           </a>
         </div>
       </div>
-      <div class="header__btn header__btn--enter btn col-1 fs-14 fw-600 col btn-primary btn-sm py-2 d-flex ">
+      <div class="header__btn header__btn--enter btn col-1 fs-14 fw-600 btn-primary btn-sm py-2 d-none d-md-flex ">
         <a href="#" role="button" class="d-block text-right"
           >Вход</a
         >
       </div>
-      <button
-        type="button"
-        class="col-1 col-open d-block d-lg-none header__burger burger button"
-      >
-        <span class="burger__inner">
-          <span></span>
-        </span>
-      </button>
+     
       
       <nav
-        class="header__menu col-12 col-lg-9 pe-5"
+        class="header__menu col-12 col-lg-9 pe-lg-5"
       >
         <ul
           class="header__list d-flex h-100 flex-column flex-lg-row justify-content-center justify-content-lg-between text-nowrap"
@@ -114,7 +107,7 @@
           </li>
         </ul>
       </nav>
-      <ul class="header__social-list d-flex align-items-center mb-0 px-3 justify-content-between col">
+      <ul class="header__social-list d-none d-md-flex align-items-center mb-0 px-lg-3 justify-content-between col-1">
         <li class="header__social-item rounded-circle d-flex justify-content-center align-items-center">
           <a href="#" class="header__social-link">
             <svg
@@ -159,11 +152,19 @@
           </a>
         </li>
       </ul>
-      <div class="header__btn header__btn--mail fs-16 fw-500 btn text-white  col-2 px-0 d-block">
+      <div class="header__btn header__btn--mail fs-16 fw-500 btn text-white  col-2 px-0 d-none  d-lg-block">
         <a data-popup="#callback" href="#callback" role="button" data-bs-toggle="modal" data-bs-target="#orderModal"
           >Написать нам</a
         >
       </div>
+      <button
+      type="button"
+      class="col-2 col-sm-1 col-open d-block d-lg-none header__burger burger button"
+    >
+      <span class="burger__inner">
+        <span></span>
+      </span>
+    </button>
     </div>
   </div>
 </header>

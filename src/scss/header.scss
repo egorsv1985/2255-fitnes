@@ -169,12 +169,18 @@
   &__menu {
     position: fixed;
     left: -100%;
-    width: 100%;
+   
     top: 0;
     bottom: 0;
     z-index: -1;
     transition: all 0.2s ease;
     background: rgba(13, 13, 13, 0.9);
+    @include media (min, lg) {
+      position: relative;
+      left: 0;
+      z-index: 10;
+      
+    }
   }
   // .header__list
   &__list {
@@ -217,6 +223,9 @@
         @include media (max, xl) {
           right: 10px;
         }
+        @include media (max, lg) {
+          display: none;
+        }
       }
     }
     &--mail {
@@ -230,6 +239,9 @@
         top: 50%;
         transform: translateY(-50%);
         border-radius: 50%;
+        @include media (max, lg) {
+          left: 15px;
+        }
       }
     }
   }

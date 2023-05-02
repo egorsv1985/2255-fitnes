@@ -46,17 +46,28 @@ function initSliders() {
   // при необходимости отключить
   bildSliders();
 
-  // if (document.querySelector(".spaSwiper")) {
-  //   new Swiper(".spaSwiper", {
-  //     spaceBetween: 55,
-  //     loop: true,
-  //     slidesPerView: 1,
-  //     navigation: {
-  //       nextEl: ".swiper-button-next",
-  //       prevEl: ".swiper-button-prev",
-  //     },
-  //   });
-  // }
+  if (document.querySelector(".promoSwiper")) {
+    new Swiper(".promoSwiper", {
+       // задаем количество слайдов, которые будут показываться одновременно
+    slidesPerView: 1,
+    // включаем курсор в виде "руки" при наведении на слайды
+    grabCursor: true,
+    // включаем использование клавиатуры для навигации по слайдам
+    keyboard: {
+      enabled: true,
+    },
+    // включаем кнопки "вперед" и "назад" для навигации по слайдам
+    navigation: {
+      nextEl: ".promo .swiper-button-next",
+      prevEl: ".promo .swiper-button-prev",
+    },
+    // включаем пагинацию и настраиваем внешний вид номеров слайдов
+    pagination: {
+      el: ".promo .swiper-pagination",
+      clickable: true,
+    },
+    });
+  }
 }
 
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)

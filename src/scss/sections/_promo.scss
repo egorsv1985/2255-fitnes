@@ -6,7 +6,7 @@
   background-size: auto 118%;
 
   background-repeat: no-repeat;
-  
+
   // .prime__box-img
   &__box-img {
     position: absolute;
@@ -14,14 +14,14 @@
     left: 0;
     z-index: 2;
   }
-  
+
   // .prime__content
   &__content {
     padding-top: 170px;
     position: relative;
 
     z-index: 2;
-   
+
     &::before {
       @include pseudo;
       @include background(url("@img/prime.png"));
@@ -29,7 +29,6 @@
       position: absolute;
       right: 5%;
       top: 47%;
-   
     }
     &::after {
       // @include pseudo;
@@ -45,7 +44,7 @@
   &__title {
     margin-bottom: 35px;
   }
-  
+
   .form {
     @include flex(space-between, $flex-direction: column);
     gap: 20px;
@@ -59,7 +58,6 @@
 
       gap: 16px;
       position: relative;
-    
     }
     // .form__box
     &__box {
@@ -70,7 +68,6 @@
       width: 275px;
       height: 60px;
       border-radius: 15px;
-   
 
       font-family: "ProximaNova-Light";
       font-weight: 300;
@@ -130,11 +127,6 @@
         font-size: 38px;
         line-height: 38px;
       }
-
-     
-    
-
-     
     }
     // .form__checkbox
     &__checkbox {
@@ -195,4 +187,181 @@
   .checkbox__input:checked + .checkbox__label::before {
     opacity: 1;
   }
+}
+
+.promo {
+  .container {
+    position: relative;
+  }
+
+  // .promo__content
+  &__content {
+  }
+
+  // .promo__btn
+  &__btn {
+    position: relative;
+    &--visitor {
+      text-align: left;
+      padding-left: 130px;
+    }
+  }
+  // .promo__span
+  &__span {
+    display: block;
+    &--visitor {
+      @include background(url("@img/icons/gift.svg"));
+      position: absolute;
+      left: 75px;
+      top: 50%;
+      @include wh(24px);
+      &::before {
+        @include pseudo;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border: 1px solid #05c3de;
+        @include wh(55px);
+        z-index: 1;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+      }
+    }
+  }
+  // .promo__scroll
+  &__scroll {
+    position: absolute;
+    left: 0;
+    bottom: 95px;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    background-size: auto 100%;
+    background-image: url("@img/icons/mouse.svg");
+  }
+  // .promo__title
+  &__title {
+    font-family: "Montserrat-Black";
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 110%;
+
+    color: $textMainColor;
+  }
+  // .promo__subtitle
+  &__subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: $textMainColor;
+  }
+  .carousel {
+  }
+  .slide {
+  }
+  .carousel-indicators {
+    @include flex(center, center);
+    gap: 10px;
+    height: 18px;
+    bottom: 80px;
+    left: -38%;
+    li {
+      @include wh(10px);
+      border-radius: 50%;
+
+      background-color: $mainColor;
+      &.active {
+        position: relative;
+        &::before {
+          @include pseudo;
+          @include wh(18px);
+          border-radius: 50%;
+
+          border: 1px solid $mainColor;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+  .active {
+  }
+  .carousel-inner {
+  }
+  .carousel-item {
+    background-repeat: no-repeat;
+    background-position: 110% 50%;
+    background-size: auto 100%;
+    background-image: url("@img/promo.png");
+    padding-top: 345px;
+    padding-bottom: 280px;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    @include wh(40px);
+      border-radius: 50%;
+
+      background-color: $mainColor;
+      top: 50%;
+  }
+  .carousel-control-prev {
+    left: -10%;
+  }
+  .carousel-control-prev-icon {
+    
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    @include background (url("@img/icons/arrow.svg"));
+    width: 11px;
+    height: 8px;
+    
+  }
+  .visually-hidden {
+  }
+  .carousel-control-next {
+    right: -10%;
+  }
+  .carousel-control-next-icon {
+    transform: rotate(180deg);
+  }
+}
+
+.container {
+}
+.btn {
+}
+.col-3 {
+}
+.fs-16 {
+}
+.fw-600 {
+}
+.btn-primary {
+}
+.btn-sm {
+}
+.py-2 {
+}
+.col-2 {
+}
+.text-white {
+}
+.fw-800 {
+}
+.text-primary {
+}
+
+.title {
+}
+.subtitle {
+}
+.d-block {
+}
+.w-100 {
+}
+.h-auto {
 }

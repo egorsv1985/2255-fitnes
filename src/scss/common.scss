@@ -1,9 +1,26 @@
 // Заголовки, общие БЄМ блоки и проче...
 
 .title {
+  position: relative;
+  padding-left: 45px;
+  &::before {
+    @include pseudo;
+    @include wh(10px);
+    border-radius: 50%;
+
+    background-color: $mainColor;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .subtitle {
+  font-size: 40px;
+  line-height: 110%;
+
+  color: $textMainColor;
 }
 
 .text {
@@ -32,6 +49,9 @@
 
 .fw-600 {
   font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
 }
 .fw-800 {
   font-weight: 800;

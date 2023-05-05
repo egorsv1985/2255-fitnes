@@ -245,8 +245,11 @@
     font-weight: 900;
     font-size: 64px;
     line-height: 110%;
-
+    padding-left: 0;
     color: $textMainColor;
+    &::before {
+      display: none;
+    }
   }
   // .promo__subtitle
   &__subtitle {
@@ -302,23 +305,21 @@
   .carousel-control-prev,
   .carousel-control-next {
     @include wh(40px);
-      border-radius: 50%;
+    border-radius: 50%;
 
-      background-color: $mainColor;
-      top: 50%;
+    background-color: $mainColor;
+    top: 50%;
   }
   .carousel-control-prev {
     left: -10%;
   }
   .carousel-control-prev-icon {
-    
   }
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
-    @include background (url("@img/icons/arrow.svg"));
+    @include background(url("@img/icons/arrow.svg"));
     width: 11px;
     height: 8px;
-    
   }
   .visually-hidden {
   }

@@ -1,68 +1,154 @@
-.about {
-  position: relative;
-  padding: 138px 0 200px;
-  overflow: hidden;
-  &::after{
-    @include pseudo;
-    @include background (url("@img/about.png"));
-    @include wh(625px, 897px);
-    max-width: 100%;
-    
-    position: absolute;
-    right: 7%;
-    bottom: 41%;
-    transform: translateY(50%);
-    z-index: -1;
-  }
-  &::before{
-    @include pseudo;
-    @include background (url("@img/about2.png"));
-    @include wh(655px);
-    max-width: 100%;
-    
-    position: absolute;
-    right: 8%;
-    bottom: 41%;
-    transform: translateY(50%);
-    z-index: -1;
-  }
-  // .about__wrapper
-  &__wrapper {
-    @include flex(space-between, $flex-direction: column);
-    gap: 60px;
-  }
-  
-  // .about__list
-  &__list {
-    @include flex($align-items: center, $flex-wrap: wrap);
-    gap: 10px;
-    max-width: 698px;
-  
-  }
-  // .about__item
-  &__item {
-    @include flex(space-between, center);
-    gap: 25px;
-    padding: 30px 20px;
 
-    background: $accentColor;
-    opacity: 0.85;
+.about {
+  padding: 55px 0 100px;
+  // .about__title
+  &__title {
   }
-  
+  // .about__subtitle
+  &__subtitle {
+    margin-bottom: 34px;
+  }
   // .about__text
   &__text {
-    max-width: 180px;
+    line-height: 130%;
   }
-  // .about__ellipse1
-  &__ellipse1 {
-    position: absolute;
-    @include wh(687px);
-    right: 5%;
-    top: 5%;
-    border-radius: 50%;
+  // .about__box-img
+  &__box-img {
+    margin-top: 65px;
+    position: relative;
+  }
+  // .about__img
+  &__img {
+  }
 
-    background: linear-gradient(84.92deg, #7200ff 0%, #ff0202 104.93%);
-    filter: blur(200px);
-    z-index: -2;
+  // .about__content-border
+  &__content-border {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%);
+    background: linear-gradient(
+        61.29deg,
+        #05c3de 11.43%,
+        rgba(5, 195, 222, 0) 91.01%
+      ),
+      linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.05)
+      );
+    padding: 2px;
+    
+    border-radius: 10px;
   }
+
+  // .about__content
+  &__content {
+  
+    padding: 26px 24px 20px;
+    background: $accentColor;
+    p:nth-child(2){
+      min-width: 300px;
+    }
+  }
+  // .about__box-content
+  &__box-content {
+    margin-bottom: 70px;
+  }
+  // .about__box-border
+  &__box-border {
+    background: linear-gradient(
+        61.29deg,
+        #05c3de 11.43%,
+        rgba(5, 195, 222, 0) 91.01%
+      ),
+      linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.05)
+      );
+    padding: 2px;
+
+    border-radius: 10px;
+  }
+  // .about__box
+  &__box {
+    position: relative;
+    background: $accentColor;
+    padding: 45px 20px 10px;
+    min-height: 120px;
+  }
+
+  // .about__gift-border
+  &__gift-border {
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    @include wh(59px);
+    border: 1px solid;
+    background: linear-gradient(
+        61.29deg,
+        #05c3de 11.43%,
+        rgba(5, 195, 222, 0) 91.01%
+      ),
+      linear-gradient(0deg, #222224, #222224);
+
+    padding: 2px;
+
+    border-radius: 50%;
+  }
+  // .about__box-gift
+  &__box-gift {
+    @include flex(center, center);
+    @include wh(55px);
+    background: $accentColor;
+  }
+  // .about__img
+  &__img {
+  }
+
+  // .about__blockquote
+  &__blockquote {
+    font-family: "Montserrat-Italic";
+    font-style: italic;
+
+    line-height: 110%;
+
+    color: $textMainColor;
+    margin-top: 112px;
+    position: relative;
+    &::before {
+      @include pseudo;
+      @include background(url("@img/icons/quotation.svg"));
+      position: absolute;
+      top: -25px;
+      left: 0;
+      @include wh(22px, 19px);
+    }
+  }
+}
+.container {
+}
+.row {
+}
+.col-12 {
+}
+.title {
+}
+.text-primary {
+}
+.fs-14 {
+}
+.fw-500 {
+}
+.subtitle {
+}
+.col-6 {
+}
+.text {
+}
+.col-3 {
 }

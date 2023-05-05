@@ -1,0 +1,128 @@
+.halls {
+  background-color: $secondColor;
+  background-image: url("@img/icons/2255.svg");
+  background-repeat: repeat-y;
+  background-position: 86% center;
+  padding: 84px 0 100px;
+  // .halls__title
+  &__title {
+  }
+  // .halls__subtitle
+  &__subtitle {
+    margin-bottom: 40px;
+    max-width: 450px;
+  }
+  .carousel {
+    // .carousel__subtitle
+    &__subtitle {
+      font-size: 32px;
+      line-height: 110%;
+      margin: 30px 0 20px;
+    }
+    // .carousel__text
+    &__text {
+      line-height: 130%;
+    }
+
+    // .carousel__box-top
+    &__box-top {
+      border-bottom: 1px solid $successcolor;
+      padding: 36px 0 15px;
+    }
+    // .carousel__description
+    &__description {
+      font-size: 32px;
+      line-height: 130%;
+    }
+
+    // .carousel__box-bottom
+    &__box-bottom {
+      padding: 22px 0 15px;
+    }
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    @include wh(40px);
+    border-radius: 50%;
+
+    background-color: $mainColor;
+    top: 50%;
+  }
+  .carousel-control-prev {
+    left: -10%;
+  }
+  .carousel-control-prev-icon {
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    @include background(url("@img/icons/arrow.svg"));
+    width: 11px;
+    height: 8px;
+  }
+  .visually-hidden {
+  }
+  .carousel-control-next {
+    right: -10%;
+  }
+  .carousel-control-next-icon {
+    transform: rotate(180deg);
+  }
+}
+.container {
+}
+.row {
+}
+.title {
+}
+.text-primary {
+}
+.fs-14 {
+}
+.fw-500 {
+}
+.mb-4 {
+}
+.subtitle {
+}
+.fw-700 {
+}
+.carousel {
+  // .carousel__subtitle
+  &__subtitle {
+  }
+  // .carousel__text
+  &__text {
+  }
+}
+.slide {
+}
+.carousel-inner {
+}
+.carousel-item {
+}
+.active {
+}
+.col-6 {
+}
+.text {
+}
+.mb-0 {
+}
+.col-12 {
+}
+.d-block {
+}
+.w-100 {
+}
+.h-auto {
+}
+.carousel-control-prev {
+}
+.carousel-control-prev-icon {
+}
+.visually-hidden {
+}
+.carousel-control-next {
+}
+.carousel-control-next-icon {
+}

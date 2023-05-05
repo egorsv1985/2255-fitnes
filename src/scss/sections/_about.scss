@@ -88,7 +88,7 @@
     transform: translateX(-50%);
     z-index: 2;
     @include wh(59px);
-    border: 1px solid;
+   
     background: linear-gradient(
         61.29deg,
         #05c3de 11.43%,
@@ -96,7 +96,7 @@
       ),
       linear-gradient(0deg, #222224, #222224);
 
-    padding: 2px;
+    padding: 1px;
 
     border-radius: 50%;
   }
@@ -119,6 +119,8 @@
 
     color: $textMainColor;
     margin-top: 112px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $thirdColor;
     position: relative;
     &::before {
       @include pseudo;

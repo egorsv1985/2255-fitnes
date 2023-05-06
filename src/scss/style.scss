@@ -21,7 +21,7 @@ $mainColor: #05c3de;
 $accentColor: #0d0d0d;
 $secondColor: #fff;
 $thirdColor: #222224;
-$successcolor: #e2e6ee;
+$successColor: #e2e6ee;
 $textMainColor: #fff;
 $textAccentColor: #222224;
 $textSuccessColor: #e2e6ee;
@@ -165,6 +165,7 @@ picture {
 @import "./sections/promo";
 @import "./sections/about";
 @import "./sections/halls";
+@import "./sections/services";
 
 // @import "./components/popup";
 

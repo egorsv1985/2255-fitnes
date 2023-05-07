@@ -1,5 +1,5 @@
 .services {
-  padding: 110px 0 250px;
+  padding: 110px 0 65px;
   position: relative;
   @include background(url("@img/services.png"));
   // .services__title
@@ -11,7 +11,7 @@
   }
   // .services__box
   &__box {
-    position: absolute;
+    // position: absolute;
     left: 165px;
     bottom: 14%;
     max-width: 445px;

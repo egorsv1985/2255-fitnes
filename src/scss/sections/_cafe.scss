@@ -1,0 +1,65 @@
+.cafe {
+	background-color: $secondColor;
+	background-image: url("@img/icons/2255.svg"), url("@img/cafe.png");
+	background-repeat: repeat-y, no-repeat;
+	background-position: 86% center, center;
+	padding: 84px 0 100px;
+	// .cafe__title
+	&__title {}
+	// .cafe__subtitle
+	&__subtitle {}
+	// .cafe__text
+	&__text {}
+	// .cafe__content
+	&__content {}
+	// .cafe__btn
+	&__btn {}
+	// .cafe__box-border
+	&__box-border {}
+	// .cafe__box
+	&__box {}
+	// .cafe__span
+	&__span {}
+}
+.container {
+}
+.row {
+}
+.col-5 {
+}
+.title {
+}
+.text-primary {
+}
+.fs-14 {
+}
+.fw-500 {
+}
+.mb-4 {
+}
+.subtitle {
+}
+.text-secondary {
+}
+.fw-700 {
+}
+.text {
+}
+.fs-16 {
+}
+.btn {
+}
+.col-6 {
+}
+.fw-600 {
+}
+.promo {
+	// .promo__span
+	&__span {}
+}
+.fw-800 {
+}
+.d-block {
+}
+.fw-400 {
+}

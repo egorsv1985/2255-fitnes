@@ -2,14 +2,20 @@
 	background-color: $secondColor;
 	background-image: url("@img/icons/2255.svg"), url("@img/cafe.png");
 	background-repeat: repeat-y, no-repeat;
-	background-position: 86% center, center;
-	padding: 84px 0 100px;
+	background-position: 86% center, 87% center;
+	padding: 100px  0 140px;
+	
 	// .cafe__title
 	&__title {}
 	// .cafe__subtitle
-	&__subtitle {}
+	&__subtitle {
+		max-width: 250px;
+		margin-bottom: 40px;
+	}
 	// .cafe__text
-	&__text {}
+	&__text {
+		line-height: 130%;
+	}
 	// .cafe__content
 	&__content {}
 	// .cafe__btn

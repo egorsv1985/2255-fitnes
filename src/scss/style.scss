@@ -168,12 +168,13 @@ picture {
 @import "./sections/services";
 @import "./sections/cafe";
 @import "./sections/infrastructure";
+@import "./sections/contacts";
 
 @import "./components/popup";
 
 // block
 @import "header";
-// @import "footer";
+@import "footer";
 // @import "./blocks/nav";
 // @import "./blocks/logo";
 @import "./blocks/open-burger";

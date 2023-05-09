@@ -1,23 +1,72 @@
 .footer {
-  padding-bottom: 70px;
-  // .footer__wrapper
-  &__wrapper {
-    @include flex(space-between, center);
-   
-  }
-  // .footer__box
-  &__box {
-    @include flex(space-between, $flex-direction: column);
+  padding: 70px 0;
+  // .footer__logo
+  &__logo {
    
   }
   // .footer__text
-  &__text {
-    font-family: "Mulish-Regular";
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 113%;
-    letter-spacing: 0.04em;
-   
+  &__text {}
+  // .footer__social-list
+  &__social-list {
+    max-width: 60px;
+  }
+  // .footer__social-item
+  &__social-item {}
+  // .footer__social-link
+  &__social-link {}
+  // .footer__subtitle
+  &__subtitle {}
+  // .footer__box
+  &__box {
+    padding-left: 36px;
+    position: relative;
+    &::before{
+      @include pseudo;
+      @include wh(15px);
+      position: absolute;
+      left: 0;
+      top: 30%;
+      transform: translateY(-50%);
+    }
+    &--map {
+      &::before {
+       
+        @include background(url("@img/icons/map.svg"));
+        
+       
+       
+    }
   }
   
+  &--time{
+    &::before {
+     
+      @include background(url("@img/icons/time.svg"));
+     
+      }
+  }
+  &--tel{
+    &::before {
+     
+      @include background(url("@img/icons/tel.svg"));
+    
+   
+      }
+  }
+  }
+  // .footer__box--map
+  &__box--map {}
+  // .footer__span
+  &__span {}
+  // .footer__box--time
+  &__box--time {}
+  // .footer__box--tel
+  &__box--tel {}
+  // .footer__link
+  &__link {}
+  // .footer__list
+  &__list {}
+  // .footer__item
+  &__item {}
 }
+

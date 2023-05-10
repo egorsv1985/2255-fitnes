@@ -40,19 +40,28 @@
   // .promo__scroll
   &__scroll {
     position: absolute;
-    left: 0;
+    left: 15px;
     bottom: 95px;
     padding-left: 40px;
     background-repeat: no-repeat;
     background-position: 0% 50%;
     background-size: auto 100%;
     background-image: url("@img/icons/mouse.svg");
+    &::before {
+      @include pseudo;
+      height: 1px;
+      width: 156px;
+      background-color: $thirdColor;
+      position: absolute;
+      bottom: 50%;
+      left: -190%;
+    }
   }
   // .promo__title
   &__title {
     font-family: "Montserrat-Black";
     font-weight: 900;
-   
+
     --promo-title-font-size: clamp(40px, 5.9vw + 18.77px, 64px);
     font-size: var(--promo-title-font-size);
     // font-size: 64px;
@@ -79,9 +88,9 @@
     @include flex(center, center);
     gap: 10px;
     height: 18px;
-    bottom: 80px;
+    bottom: 90px;
     left: -38%;
-    @include media(max, sm){
+    @include media(max, sm) {
       left: 0;
     }
     li {
@@ -116,7 +125,7 @@
     background-image: url("@img/promo.png");
     padding-top: 345px;
     padding-bottom: 280px;
-    @include media(max, lg){
+    @include media(max, lg) {
       padding: 200px 0;
     }
   }
@@ -124,7 +133,7 @@
   .carousel-control-next {
   }
   .carousel-control-prev {
-    left: -17%;
+    left: -16%;
   }
   .carousel-control-prev-icon {
   }
@@ -137,23 +146,60 @@
   .visually-hidden {
   }
   .carousel-control-next {
-    right: -17%;
+    right: -16%;
   }
   .carousel-control-next-icon {
     transform: rotate(180deg);
   }
+  .box-border {
+    @include wh(40px);
+    background: linear-gradient(
+        61.29deg,
+        #05c3de 11.43%,
+        rgba(5, 195, 222, 0) 91.01%
+      ),
+      linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.05)
+      );
+  }
   .box-circle {
     background: $thirdColor;
+    @include wh(36px);
   }
   &__box-border--gift {
     position: absolute;
     left: 60px;
     top: 0%;
-    @include media (max, md){
+    @include media(max, md) {
       left: 30px;
     }
-    @include media (max, sm){
+    @include media(max, sm) {
       display: none;
     }
+  }
+
+  // .promo__ellipse1
+  &__ellipse1 {
+    @include wh(226px);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+
+    background-color: #cd7efc;
+    filter: blur(150px);
+  }
+  // .promo__ellipse2
+  &__ellipse2 {
+    @include wh(177px);
+    border-radius: 50%;
+    position: absolute;
+    top: 26%;
+    left: 0;
+
+    background-color: #05c3de;
+    filter: blur(150px);
   }
 }

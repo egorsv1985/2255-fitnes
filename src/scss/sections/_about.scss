@@ -16,6 +16,74 @@
     margin-top: 65px;
     position: relative;
   }
+
+  // .about__box-border
+  &__box-border {
+    &--big {
+      background: linear-gradient(
+          61.29deg,
+          #05c3de 11.43%,
+          rgba(5, 195, 222, 0) 91.01%
+        ),
+        linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.05),
+          rgba(255, 255, 255, 0.05)
+        );
+      padding: 2px;
+      position: absolute;
+      top: 59%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -2;
+      border-radius: 50%;
+      @include wh(502px);
+    }
+    &--center {
+      background: linear-gradient(
+          61.29deg,
+          #05c3de 11.43%,
+          rgba(5, 195, 222, 0) 91.01%
+        ),
+        linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.05),
+          rgba(255, 255, 255, 0.05)
+        );
+      padding: 2px;
+      position: absolute;
+      top: 59%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -2;
+      border-radius: 50%;
+      @include wh(348px);
+    }
+    &--small {
+      @include wh(177px);
+      position: absolute;
+      top: 59%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #05c3de;
+      filter: blur(150px);
+    }
+  }
+
+  // .about__box-circle
+  &__box-circle {
+    &--big {
+      border-radius: 50%;
+      background: $accentColor;
+      @include wh(498px);
+    }
+    &--center {
+      border-radius: 50%;
+      background: $accentColor;
+      @include wh(344px);
+    }
+  }
+
   // .about__img
   &__img {
   }
@@ -53,7 +121,7 @@
   }
   // .about__box-content
   &__box-content {
-    margin-bottom: 70px;
+    margin-bottom: 55px;
   }
   // .about__box-border
   &__box-border {
@@ -77,6 +145,7 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
+    border-radius: 50%;
 
     background: linear-gradient(
         61.29deg,
@@ -126,7 +195,7 @@
     padding-bottom: 20px;
     border-bottom: 1px solid $thirdColor;
     position: relative;
-    @include media (max, lg){
+    @include media(max, lg) {
       margin-top: 60px;
     }
     &::before {

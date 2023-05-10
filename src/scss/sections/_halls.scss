@@ -44,9 +44,6 @@
   }
   .carousel-control-prev,
   .carousel-control-next {
-  
-   
-    
   }
   .carousel-control-prev {
     left: -17%;
@@ -68,6 +65,7 @@
     transform: rotate(180deg);
   }
   .box-border {
+    @include wh(40px);
     background: linear-gradient(
         61.29deg,
         #05c3de 11.43%,
@@ -79,7 +77,8 @@
         rgba(255, 255, 255, 0.05)
       );
   }
-  .box-circle{
+  .box-circle {
+    @include wh(36px);
     background: $secondColor;
   }
 }

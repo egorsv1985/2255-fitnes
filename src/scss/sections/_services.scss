@@ -85,7 +85,12 @@
     transform: rotate(180deg);
   }
   .services__span {
-    margin-right: 75px;
+    --services-span-margin-right: clamp(10px, 9.67vw + -64.29px, 75px);
+    margin-right: var(--services-span-margin-right);
+    @include media (max, lg){
+      // margin-right: 0;
+    }
+    // margin-right: 75px;
   }
   button[aria-expanded="true"] {
     .services__arrow {
@@ -98,6 +103,10 @@
 
     // .card__btn
     &__btn {
+      
+      --card-btn-font-size: clamp(16px, 1.57vw + 10.98px, 20px);
+      font-size: var(--card-btn-font-size);
+      // font-size: 20px;
     }
 
     // .services__box-border
@@ -114,6 +123,9 @@
     ul {
       padding-left: 100px;
       max-width: 290px;
+      @include media(max, lg){
+        padding-left: 0;
+      }
       li {
         position: relative;
         line-height: 130%;

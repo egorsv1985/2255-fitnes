@@ -1,9 +1,8 @@
-
-
 .header {
   position: fixed;
-    z-index: 999;
-    width: 100%;
+  z-index: 999;
+  width: 100%;
+  background-color: $accentColor;
   // .header__wrapper
   &__wrapper {
   }
@@ -22,43 +21,41 @@
         left: -25px;
         top: 50%;
         transform: translateY(-50%);
-       
-    }
-  }
-  &--metro{
-    &::before {
-      @include pseudo;
-      @include background(url("@img/icons/metro.svg"));
-      @include wh(15px);
-      position: absolute;
-      left: -25px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  }
-  &--time{
-    &::before {
-      @include pseudo;
-      @include background(url("@img/icons/time.svg"));
-      @include wh(15px);
-      position: absolute;
-      left: -25px;
-      top: 50%;
-      transform: translateY(-50%);
       }
-  }
-  &--tel{
-    &::before {
-      @include pseudo;
-      @include background(url("@img/icons/tel.svg"));
-      @include wh(15px);
-      position: absolute;
-      left: -25px;
-      top: 50%;
-      transform: translateY(-50%);
-   
+    }
+    &--metro {
+      &::before {
+        @include pseudo;
+        @include background(url("@img/icons/metro.svg"));
+        @include wh(15px);
+        position: absolute;
+        left: -25px;
+        top: 50%;
+        transform: translateY(-50%);
       }
-  }
+    }
+    &--time {
+      &::before {
+        @include pseudo;
+        @include background(url("@img/icons/time.svg"));
+        @include wh(15px);
+        position: absolute;
+        left: -25px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    &--tel {
+      &::before {
+        @include pseudo;
+        @include background(url("@img/icons/tel.svg"));
+        @include wh(15px);
+        position: absolute;
+        left: -25px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
   }
   // .header__box--map
   &__box--map {
@@ -76,13 +73,13 @@
   &__menu {
     position: fixed;
     left: -100%;
-   
+
     top: 0;
     bottom: 0;
     z-index: -1;
     transition: all 0.2s ease;
-    background: rgba(13, 13, 13, 0.9);
-    @include media (min, lg) {
+   
+    @include media(min, lg) {
       position: relative;
       left: 0;
       z-index: 10;
@@ -127,10 +124,10 @@
         right: 25px;
         top: 50%;
         transform: translateY(-50%);
-        @include media (max, xl) {
+        @include media(max, xl) {
           right: 10px;
         }
-        @include media (max, lg) {
+        @include media(max, lg) {
           display: none;
         }
       }
@@ -146,7 +143,7 @@
         top: 50%;
         transform: translateY(-50%);
         border-radius: 50%;
-        @include media (max, lg) {
+        @include media(max, lg) {
           left: 15px;
         }
       }

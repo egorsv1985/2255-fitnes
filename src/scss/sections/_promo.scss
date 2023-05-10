@@ -3,10 +3,6 @@
     position: relative;
   }
 
-  // .promo__content
-  &__content {
-  }
-
   // .promo__btn
   &__btn {
     position: relative;
@@ -74,16 +70,9 @@
   }
   // .promo__subtitle
   &__subtitle {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-
     color: $textMainColor;
   }
-  .carousel {
-  }
-  .slide {
-  }
+
   .carousel-indicators {
     @include flex(center, center);
     gap: 10px;
@@ -114,10 +103,7 @@
       }
     }
   }
-  .active {
-  }
-  .carousel-inner {
-  }
+
   .carousel-item {
     background-repeat: no-repeat;
     background-position: 110% 50%;
@@ -129,22 +115,18 @@
       padding: 200px 0;
     }
   }
-  .carousel-control-prev,
-  .carousel-control-next {
-  }
+
   .carousel-control-prev {
     left: -16%;
   }
-  .carousel-control-prev-icon {
-  }
+
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     @include background(url("@img/icons/arrow.svg"));
     width: 11px;
     height: 8px;
   }
-  .visually-hidden {
-  }
+
   .carousel-control-next {
     right: -16%;
   }
@@ -163,20 +145,18 @@
         rgba(255, 255, 255, 0.05),
         rgba(255, 255, 255, 0.05)
       );
+    &--gift {
+      @include wh(55px);
+      @include media(max, sm) {
+        display: none;
+      }
+    }
   }
   .box-circle {
     background: $thirdColor;
     @include wh(36px);
-  }
-  &__box-border--gift {
-    position: absolute;
-    left: 60px;
-    top: 0%;
-    @include media(max, md) {
-      left: 30px;
-    }
-    @include media(max, sm) {
-      display: none;
+    &--gift {
+      @include wh(51px);
     }
   }
 

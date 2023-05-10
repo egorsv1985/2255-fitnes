@@ -1,5 +1,5 @@
 .about {
-  padding: 55px 0 100px;
+  padding: 45px 0 100px;
   // .about__title
   &__title {
   }
@@ -7,13 +7,22 @@
   &__subtitle {
     margin-bottom: 34px;
   }
+ 
+		// .about__box-text
+		&__box-text {
+      p{
+       margin-bottom: 0;
+      }
+    }
+
+
   // .about__text
   &__text {
-    line-height: 130%;
+    
   }
   // .about__box-img
   &__box-img {
-    margin-top: 65px;
+    margin-top: 45px;
     position: relative;
   }
 
@@ -188,10 +197,10 @@
     font-family: "Montserrat-Italic";
     font-style: italic;
 
-    line-height: 110%;
+   
 
     color: $textMainColor;
-    margin-top: 112px;
+    margin-top: 120px;
     padding-bottom: 20px;
     border-bottom: 1px solid $thirdColor;
     position: relative;

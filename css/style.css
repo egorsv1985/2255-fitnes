@@ -10880,13 +10880,13 @@ textarea.form-control-lg {
   --bs-btn-color: #fff;
   --bs-btn-bg: #05c3de;
   --bs-btn-border-color: #05c3de;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #0b5ed7;
-  --bs-btn-hover-border-color: #0a58ca;
+  --bs-btn-hover-color: #05c3de;
+  --bs-btn-hover-bg: #fff;
+  --bs-btn-hover-border-color: #05c3de;
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #0a58ca;
-  --bs-btn-active-border-color: #0a53be;
+  --bs-btn-active-bg: #05c3de;
+  --bs-btn-active-border-color: #05c3de;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #05c3de;
@@ -10964,7 +10964,7 @@ textarea.form-control-lg {
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
   --bs-link-color: #0d6efd;
-  --bs-link-hover-color: #0a58ca;
+  --bs-link-hover-color: #05c3de;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -12083,6 +12083,7 @@ button.swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   border-radius: 50%;
+  cursor: pointer;
   background-color: #05c3de;
 }
 .promo .carousel-indicators li.active {
@@ -12135,6 +12136,13 @@ button.swiper-pagination-bullet {
   width: 40px;
   height: 40px;
   background: linear-gradient(61.29deg, #05c3de 11.43%, rgba(5, 195, 222, 0) 91.01%), linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+  cursor: pointer;
+}
+.promo .box-border:hover {
+  transition: all 0.3s ease-in-out;
+}
+.promo .box-border:hover .box-circle {
+  background: #e2e6ee;
 }
 .promo .box-border--gift {
   width: 55px;
@@ -12364,6 +12372,13 @@ button.swiper-pagination-bullet {
   width: 40px;
   height: 40px;
   background: linear-gradient(47.45deg, #05C3DE 13.8%, rgba(5, 195, 222, 0) 87.06%);
+  cursor: pointer;
+}
+.halls .box-border:hover {
+  transition: all 0.3s ease-in-out;
+}
+.halls .box-border:hover .box-circle {
+  background: #e2e6ee;
 }
 .halls .box-circle {
   width: 36px;
@@ -12434,6 +12449,13 @@ button.swiper-pagination-bullet {
   width: 40px;
   height: 40px;
   background: linear-gradient(61.29deg, #05c3de 11.43%, rgba(5, 195, 222, 0) 91.01%), linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+  cursor: pointer;
+}
+.services .box-border:hover {
+  transition: all 0.3s ease-in-out;
+}
+.services .box-border:hover .box-circle {
+  background: #e2e6ee;
 }
 .services .box-circle {
   background: #0d0d0d;
@@ -12448,6 +12470,7 @@ button.swiper-pagination-bullet {
   width: 11px;
   height: 8px;
   transform: rotate(180deg);
+  transition: all 0.3s ease-in-out;
 }
 .services .services__span {
   --services-span-margin-right: clamp(10px, 9.67vw + -64.29px, 75px);
@@ -12688,19 +12711,30 @@ button.swiper-pagination-bullet {
   background-size: cover;
   background-image: url("../img/icons/time-white.svg");
 }
+.contacts a:hover {
+  color: #222224;
+}
 .contacts__btn a {
   position: relative;
+}
+.contacts__btn a:hover {
+  color: #222224;
+}
+.contacts__btn a:hover::before {
+  background-color: #222224;
+  width: 100%;
 }
 .contacts__btn a::before {
   content: "";
   display: block;
   height: 1px;
-  width: 100%;
+  width: 0;
   background-color: #fff;
   position: absolute;
   bottom: -6px;
   left: 50%;
   transform: translateX(-50%);
+  transition: all 0.5s ease-in-out;
 }
 .contacts__box-img {
   z-index: 1;
@@ -12767,6 +12801,124 @@ button.swiper-pagination-bullet {
   .contacts__bottom {
     top: 0;
   }
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
+}
+.form__body {
+  height: 100%;
+  width: 100%;
+  border: none;
+  display: flex;
+  gap: 16px;
+  position: relative;
+}
+.form__box {
+  position: relative;
+}
+.form__input {
+  width: 276px;
+  height: 78px;
+  background-color: #fff;
+  border-radius: 33px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  color: #05c3de;
+  padding: 0 20px;
+  position: relative;
+}
+.form__input::placeholder {
+  font-size: 20px;
+  line-height: 20px;
+  color: #05c3de;
+}
+.form__input:focus-visible, .form__input:focus, .form__input:active {
+  border: 1px solid #000;
+}
+.form__input:focus, .form__input:focus-visible {
+  outline-color: #000;
+}
+.form__input:focus ~ .form__label, .form__input:valid ~ .form__label {
+  top: -20px;
+  color: #fff;
+}
+.form__label {
+  font-size: 20px;
+  line-height: 20px;
+  color: #05c3de;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+}
+.form__btn {
+  width: 276px;
+  height: 78px;
+  transition: all 0.2s ease-in-out;
+  color: #fff;
+  background: #05c3de;
+  border-radius: 33px 0px;
+  font-size: 45px;
+  line-height: 45px;
+  transition: all 0.3s ease 0s;
+}
+.form__btn:hover {
+  background: #fff;
+  color: #222224;
+}
+.form__checkbox {
+  margin-bottom: 1.1875rem;
+  max-width: 525px;
+  padding-left: 30px;
+}
+
+.checkbox__input {
+  display: none;
+}
+.checkbox__label {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  justify-content: flex-end;
+}
+.checkbox__label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 22px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/icons/check.svg");
+  opacity: 0;
+  transition: all 0.3s ease 0s;
+}
+.checkbox__label::after {
+  content: "";
+  align-self: flex-start;
+  flex: 0 0 25px;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #000;
+  background-color: #fff;
+  margin-right: 0.875rem;
+}
+.checkbox__text {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+.checkbox__input:checked + .checkbox__label::before {
+  opacity: 1;
 }
 
 .popup__content {
@@ -12888,6 +13040,25 @@ button.swiper-pagination-bullet {
   list-style: none;
   position: relative;
 }
+.header__link {
+  position: relative;
+}
+.header__link:hover::before {
+  background-color: #05c3de;
+  width: 100%;
+}
+.header__link::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 0;
+  background-color: #05c3de;
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.5s ease-in-out;
+}
 .header__btn {
   position: relative;
 }
@@ -12949,6 +13120,11 @@ button.swiper-pagination-bullet {
 }
 .footer__social-list {
   max-width: 60px;
+}
+.footer__social-item {
+  width: 25px;
+  height: 25px;
+  background-color: #222224;
 }
 .footer__box {
   padding-left: 36px;

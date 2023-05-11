@@ -1,5 +1,5 @@
 .footer {
-  padding: 70px 0;
+  padding: 40px 0;
   // .footer__logo
   &__logo {
    
@@ -20,6 +20,9 @@
   &__box {
     padding-left: 36px;
     position: relative;
+    @include media (max, sm) {
+      padding-left:0;
+    }
     &::before{
       @include pseudo;
       @include wh(15px);
@@ -27,6 +30,9 @@
       left: 0;
       top: 30%;
       transform: translateY(-50%);
+      @include media (max, sm) {
+        display: none;
+      }
     }
     &--map {
       &::before {

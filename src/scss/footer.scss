@@ -11,7 +11,13 @@
     max-width: 60px;
   }
   // .footer__social-item
-  &__social-item {}
+  &__social-item {
+    @include wh(25px);
+
+
+background-color: $thirdColor;
+
+  }
   // .footer__social-link
   &__social-link {}
   // .footer__subtitle

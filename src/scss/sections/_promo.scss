@@ -85,6 +85,7 @@
     li {
       @include wh(10px);
       border-radius: 50%;
+      cursor: pointer;
 
       background-color: $mainColor;
       &.active {
@@ -145,6 +146,14 @@
         rgba(255, 255, 255, 0.05),
         rgba(255, 255, 255, 0.05)
       );
+      cursor: pointer;
+      &:hover{
+        transition: all .3s ease-in-out;
+        
+        .box-circle{
+          background: $successColor;
+        }
+      }
     &--gift {
       @include wh(55px);
       @include media(max, sm) {

@@ -28,13 +28,13 @@
 	  background-color: #fff;
 	  border-radius: 33px;
   
-	  font-family: "ProximaNova-Light";
+	  
   
 	  font-weight: 300;
 	  font-size: 20px;
 	  line-height: 20px;
   
-	  color: $textAccentColor;
+	  color: $textSecondColor;
   
 	  padding: 0 20px;
 	  position: relative;
@@ -43,7 +43,7 @@
 		font-size: 20px;
 		line-height: 20px;
   
-		color: $textAccentColor;
+		color: $textSecondColor;
 	  }
   
 	  &:focus-visible,
@@ -65,11 +65,11 @@
 	}
 	// .form__label
 	&__label {
-	  font-family: "ProximaNova-Light";
+	 
 	  font-size: 20px;
 	  line-height: 20px;
   
-	  color: $textAccentColor;
+	  color: $textSecondColor;
 	  position: absolute;
 	  top: 50%;
 	  transform: translateY(-50%);
@@ -80,14 +80,16 @@
 	  width: 276px;
 	  height: 78px;
 	  transition: all 0.2s ease-in-out;
+	  color: $textMainColor;
 	  &:hover {
-		background: #3a3a3a;
+		background: $secondColor;
+		color: $textAccentColor;
 	  }
 	 
-	  background: $accentColor;
+	  background: $mainColor;
 	  border-radius: 33px 0px;
   
-	  font-family: "ProximaNova-Extrabld";
+	
   
 	  font-size: 45px;
 	  line-height: 45px;
@@ -141,7 +143,7 @@
 	}
 	// .checkbox__text
 	&__text {
-	  font-family: "ProximaNova-Light";
+	  
   
 	  font-size: 20px;
 	  line-height: 20px;

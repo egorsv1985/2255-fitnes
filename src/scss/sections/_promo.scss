@@ -55,15 +55,15 @@
   }
   // .promo__title
   &__title {
-    font-family: "Montserrat-Black";
-    font-weight: 900;
+   
+   
 
     --promo-title-font-size: clamp(40px, 5.9vw + 18.77px, 64px);
     font-size: var(--promo-title-font-size);
     // font-size: 64px;
     line-height: 110%;
     padding-left: 0;
-    color: $textMainColor;
+ 
     &::before {
       display: none;
     }

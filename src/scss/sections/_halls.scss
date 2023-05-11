@@ -17,10 +17,7 @@
       line-height: 110%;
       margin: 30px 0 20px;
     }
-    // .carousel__text
-    &__text {
-      
-    }
+   
 
     // .carousel__box-top
     &__box-top {
@@ -42,9 +39,7 @@
       margin-bottom: 0;
     }
   }
-  .carousel-control-prev,
-  .carousel-control-next {
-  }
+
   .carousel-control-prev {
     left: -17%;
   }
@@ -56,8 +51,7 @@
     width: 11px;
     height: 8px;
   }
-  .visually-hidden {
-  }
+
   .carousel-control-next {
     right: -17%;
   }

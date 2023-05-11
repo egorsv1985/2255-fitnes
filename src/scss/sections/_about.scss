@@ -7,19 +7,14 @@
   &__subtitle {
     margin-bottom: 34px;
   }
- 
-		// .about__box-text
-		&__box-text {
-      p{
-       margin-bottom: 0;
-      }
+
+  // .about__box-text
+  &__box-text {
+    p {
+      margin-bottom: 0;
     }
-
-
-  // .about__text
-  &__text {
-    
   }
+
   // .about__box-img
   &__box-img {
     margin-top: 45px;
@@ -91,10 +86,6 @@
       background: $accentColor;
       @include wh(344px);
     }
-  }
-
-  // .about__img
-  &__img {
   }
 
   // .about__content-border
@@ -179,25 +170,17 @@
     border-radius: 10px;
   }
 
-  // .about__gift-border
-  &__gift-border {
-  }
   // .about__box-gift
   &__box-gift {
     @include flex(center, center);
     @include wh(55px);
     background: $accentColor;
   }
-  // .about__img
-  &__img {
-  }
 
   // .about__blockquote
   &__blockquote {
     font-family: "Montserrat-Italic";
     font-style: italic;
-
-   
 
     color: $textMainColor;
     margin-top: 120px;

@@ -1,5 +1,8 @@
 .infrastructure {
-  padding: 105px 0 115px;
+  padding: 105px 0 60px;
+  .container {
+    position: relative;
+  }
   // .infrastructure__img
   &__img {
   }
@@ -17,7 +20,7 @@
   }
   // .infrastructure__content
   &__content {
-    margin-top: 60px;
+    margin-top: 45px;
   }
   // .infrastructure__box
   &__box {
@@ -46,8 +49,28 @@
   }
   // .infrastructure__ellipse1
   &__ellipse1 {
+    @include wh(160px);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+   
+
+    background-color: #cd7efc;
+    filter: blur(150px);
+    
+
   }
   // .infrastructure__ellipse2
   &__ellipse2 {
+    @include wh(177px);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -20%;
+    left:50%;
+    transform: translateX(-50%);
+
+    background-color: #05c3de;
+    filter: blur(150px);
   }
 }

@@ -2,7 +2,16 @@
   .container {
     position: relative;
   }
-
+  &__bg{
+    background-repeat: no-repeat;
+    background-position: 50% 135px;
+    background-size: auto;
+    background-image: url("@img/waves.png");
+  }
+// .promo-services__content
+&__content {
+  padding-top: 255px;
+}
   // .promo__btn
   &__btn {
     position: relative;
@@ -55,6 +64,7 @@
   }
   // .promo__title
   &__title {
+    max-width: 550px;
    
    
 
@@ -69,71 +79,11 @@
     }
   }
   // .promo__subtitle
+  
   &__subtitle {
-    color: $textMainColor;
-  }
-
-  .carousel-indicators {
-    @include flex(center, center);
-    gap: 10px;
-    height: 18px;
-    bottom: 90px;
-    left: -38%;
-    @include media(max, sm) {
-      left: 0;
+    margin-bottom: 64px;
     }
-    li {
-      @include wh(10px);
-      border-radius: 50%;
-      cursor: pointer;
 
-      background-color: $mainColor;
-      &.active {
-        position: relative;
-        &::before {
-          @include pseudo;
-          @include wh(18px);
-          border-radius: 50%;
-
-          border: 1px solid $mainColor;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
-      }
-    }
-  }
-
-  .carousel-item {
-    background-repeat: no-repeat;
-    background-position: 110% 50%;
-    background-size: auto 100%;
-    background-image: url("@img/promo.png");
-    padding-top: 345px;
-    padding-bottom: 280px;
-    @include media(max, lg) {
-      padding: 200px 0;
-    }
-  }
-
-  .carousel-control-prev {
-    left: -16%;
-  }
-
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    @include background(url("@img/icons/arrow.svg"));
-    width: 11px;
-    height: 8px;
-  }
-
-  .carousel-control-next {
-    right: -16%;
-  }
-  .carousel-control-next-icon {
-    transform: rotate(180deg);
-  }
   .box-border {
     @include wh(40px);
     background: linear-gradient(
@@ -168,6 +118,11 @@
       @include wh(51px);
     }
   }
+   // .promo__box-img
+   &__box-img {
+    padding-top: 195px;
+    
+    }
 
   // .promo__ellipse1
   &__ellipse1 {
@@ -191,4 +146,12 @@
     background-color: #05c3de;
     filter: blur(150px);
   }
+  &__box{
+    top: -80px;
+    z-index: -1;
+    @include media (max, lg){
+      top: 0;
+      
+    }
+    }
 }

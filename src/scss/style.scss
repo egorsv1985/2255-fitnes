@@ -161,21 +161,27 @@ picture {
 // @import "./components/scroll-header";
 
 // sections
-
 @import "./sections/promo";
+@import "./sections/contacts";
+
+// main-pages
+
+@import "./sections/promo-main";
 @import "./sections/about";
 @import "./sections/halls";
 @import "./sections/services";
 @import "./sections/cafe";
 @import "./sections/infrastructure";
 @import "./sections/social-project";
-@import "./sections/contacts";
 @import "./sections/forms";
 
 // services-pages
 @import "./sections/promo-services";
 @import "./sections/programs";
 @import "./sections/trends";
+
+// cards-pages
+@import "./sections/promo-cards";
 
 
 @import "./components/popup";

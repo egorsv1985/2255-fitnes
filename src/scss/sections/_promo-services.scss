@@ -1,148 +1,30 @@
 .promo-services {
-	background-repeat: no-repeat;
-    background-position: 50% 135px;
-    background-size: auto;
-    background-image: url("@img/waves.png");
- 
-  .container {
-    position: relative;
-  }
   // .promo-services__content
-	&__content {
-		padding-top: 255px;
-	}
-  &__bg{
-	
-	
+  &__content {
+  }
+  &__bg {
   }
   // .promo-services__title
   &__title {
-	
-  
-    --promo-title-font-size: clamp(40px, 5.9vw + 18.77px, 64px);
-    font-size: var(--promo-title-font-size);
-    // font-size: 64px;
-    line-height: 110%;
-    padding-left: 0;
- 
-	max-width: 700px;
-    &::before {
-      display: none;
-    }
   }
   // .promo-services__subtitle
   &__subtitle {
-	margin-bottom: 64px;
   }
   // .promo-services__btn
   &__btn {
   }
   // .promo-services__box-img
   &__box-img {
-	padding-top: 195px;
-	
   }
   // .promo-services__img
   &__img {
   }
   // .promo-services__ellipse1
   &__ellipse1 {
-    @include wh(226px);
-    border-radius: 50%;
-    position: absolute;
-    bottom: 10%;
-    right: 0;
-
-    background-color: #cd7efc;
-    filter: blur(150px);
   }
   // .promo-services__ellipse2
   &__ellipse2 {
-    @include wh(177px);
-    border-radius: 50%;
-    position: absolute;
-    top: 26%;
-    left: 0;
-
-    background-color: #05c3de;
-    filter: blur(150px);
   }
-  &__box{
-	top: -80px;
-	z-index: -1;
-	@include media (max, lg){
-		top: 0;
-		
-	}
+  &__box {
   }
-}
-.promo-services {
-	// .promo-services__content
-	&__content {}
-	// .promo-services__bg
-	&__bg {}
-	// .promo-services__title
-	&__title {}
-	// .promo-services__subtitle
-	&__subtitle {}
-	// .promo-services__btn
-	&__btn {}
-	// .promo-services__box-img
-	&__box-img {}
-	// .promo-services__img
-	&__img {}
-	// .promo-services__ellipse1
-	&__ellipse1 {}
-	// .promo-services__ellipse2
-	&__ellipse2 {}
-}
-.container {
-}
-.breadcrumb {
-}
-.breadcrumb-item {
-}
-.active {
-}
-.row {
-}
-.col-8 {
-}
-.title {
-}
-.fw-900 {
-}
-.mb-4 {
-}
-.subtitle {
-}
-.fw-400 {
-}
-.fs-24 {
-}
-.btn {
-}
-.col-5 {
-}
-.col-md-4 {
-}
-.fs-16 {
-}
-.fw-600 {
-}
-.px-2 {
-}
-.py-3 {
-}
-.btn-primary {
-}
-.btn-sm {
-}
-.text-uppercase {
-}
-.col-4 {
-}
-.d-flex {
-}
-.justify-content-center {
 }

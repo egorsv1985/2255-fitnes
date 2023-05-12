@@ -1,0 +1,138 @@
+.cards {
+	padding: 130px 0;
+	// .cards__title
+	&__title {}
+	// .cards__subtitle
+	&__subtitle {
+		max-width: 550px;
+		margin-bottom: 80px;
+	}
+	// .cards__item
+	&__item {
+		padding: 30px;
+	}
+	// .cards__text
+	&__text {}
+	// .cards__box-border
+	&__box-border {
+		top: -12px;
+	}
+	// .cards__box-circle
+	&__box-circle {}
+	.box-border {
+		
+		background: linear-gradient(
+			61.29deg,
+			#05c3de 11.43%,
+			rgba(5, 195, 222, 0) 91.01%
+		  ),
+		  linear-gradient(
+			0deg,
+			rgba(255, 255, 255, 0.05),
+			rgba(255, 255, 255, 0.05)
+		  );
+		 
+			
+		  }
+		
+	  
+	  .box-circle {
+		background: $thirdColor;
+	
+		
+	  }
+	// .cards__list
+	&__list {
+		padding-top: 36px;
+		li {
+			position: relative;
+			&::before{
+				@include pseudo;
+				@include wh(5px);
+				border-radius: 50%;
+				background-color: $accentColor;
+				position: absolute;
+				top: 10px;
+				left: -15px;
+				
+			}
+		}
+		
+			
+	}
+	&__content{
+		padding-top: 40px;
+	}
+	// .cards__btn
+	&__btn {}
+
+
+}
+.bg-white {
+}
+.container {
+}
+.title {
+}
+.text-primary {
+}
+.fs-14 {
+}
+.fw-500 {
+}
+.mb-4 {
+}
+.subtitle {
+}
+.fw-700 {
+}
+.text-secondary {
+}
+.row {
+}
+.col-4 {
+}
+.bg-secondary {
+}
+.text {
+}
+.fs-30 {
+}
+.col-6 {
+}
+.fw-800 {
+}
+.fs-20 {
+}
+.box-border {
+}
+.box-circle {
+}
+.d-flex {
+}
+.justify-content-center {
+}
+.align-items-center {
+}
+.col-5 {
+}
+.fs-16 {
+}
+.col-3 {
+}
+.flex-column {
+}
+.btn {
+}
+.fw-600 {
+}
+.px-2 {
+}
+.py-3 {
+}
+.btn-primary {
+}
+.btn-sm {
+}
+.text-uppercase {
+}

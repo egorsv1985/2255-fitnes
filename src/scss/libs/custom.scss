@@ -1,21 +1,21 @@
-@import "/node_modules/bootstrap/scss/bootstrap";
+// @import "/node_modules/bootstrap/scss/bootstrap";
 // Custom.scss
 // Вариант Б. Включите части Bootstrap
 
 // // 1. Сначала включите функции (чтобы Вы могли управлять цветами, SVG, вычислением и т.д.)
-@import "/node_modules/bootstrap/scss/functions";
+// @import "/node_modules/bootstrap/scss/functions";
 
 // // 2. Включите сюда любые переопределения переменных по умолчанию
 
 // // 3. Включите оставшуюся часть необходимых таблиц стилей Bootstrap
-@import "/node_modules/bootstrap/scss/variables";
-@import "/node_modules/bootstrap/scss/mixins";
+// @import "/node_modules/bootstrap/scss/variables";
+// @import "/node_modules/bootstrap/scss/mixins";
 
 // // 4. Включите любые дополнительные компоненты Bootstrap, как Вам нравится
 // @import "/node_modules/bootstrap/scss/root";
 // @import "/node_modules/bootstrap/scss/reboot";
 // @import "/node_modules/bootstrap/scss/type";
-@import "/node_modules/bootstrap/scss/images";
+// @import "/node_modules/bootstrap/scss/images";
 // @import "/node_modules/bootstrap/scss/containers";
 // @import "/node_modules/bootstrap/scss/grid";
 
@@ -64,15 +64,15 @@ $primary: $white !default;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #0d6efd;
-  --bs-secondary: #6c757d;
-  --bs-success: #198754;
+  --bs-secondary: #0d0d0d;
+  --bs-success: #e2e6ee;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-primary-rgb: 5, 195, 222;
-  --bs-secondary-rgb: 34, 34, 36;
+  --bs-secondary-rgb: 13, 13, 13;
   --bs-success-rgb: 226, 230, 238;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;

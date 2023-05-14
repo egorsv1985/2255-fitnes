@@ -1,23 +1,23 @@
-.promo-shedule {
-	// .promo-shedule__content
+.promo-contacts {
+	// .promo-contacts__content
 	&__content {
 		padding-bottom: 130px;
 	}
-	// .promo-shedule__title
+	// .promo-contacts__title
 	&__title {}
-	// .promo-shedule__subtitle
+	// .promo-contacts__subtitle
 	&__subtitle {}
-	// .promo-shedule__btn
+	// .promo-contacts__btn
 	&__btn {}
-	// .promo-shedule__box-img
+	// .promo-contacts__box-img
 	&__box-img {
-		
+		z-index: 1;
 	}
-	// .promo-shedule__img
+	// .promo-contacts__img
 	&__img {}
-	// .promo-shedule__ellipse1
+	// .promo-contacts__ellipse1
 	&__ellipse1 {}
-	// .promo-shedule__ellipse2
+	// .promo-contacts__ellipse2
 	&__ellipse2 {}
 }
 .promo {

@@ -1,23 +1,23 @@
-.promo-shedule {
-	// .promo-shedule__content
+.promo-team {
+	// .promo-team__content
 	&__content {
-		padding-bottom: 130px;
+		padding-bottom: 100px;
 	}
-	// .promo-shedule__title
+	// .promo-team__title
 	&__title {}
-	// .promo-shedule__subtitle
-	&__subtitle {}
-	// .promo-shedule__btn
-	&__btn {}
-	// .promo-shedule__box-img
-	&__box-img {
-		
+	// .promo-team__subtitle
+	&__subtitle {
+		max-width: 530px;
 	}
-	// .promo-shedule__img
+	// .promo-team__btn
+	&__btn {}
+	// .promo-team__box-img
+	&__box-img {}
+	// .promo-team__img
 	&__img {}
-	// .promo-shedule__ellipse1
+	// .promo-team__ellipse1
 	&__ellipse1 {}
-	// .promo-shedule__ellipse2
+	// .promo-team__ellipse2
 	&__ellipse2 {}
 }
 .promo {
@@ -95,4 +95,6 @@
 .d-none {
 }
 .d-lg-block {
+}
+.position-absolute {
 }

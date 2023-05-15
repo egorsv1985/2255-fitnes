@@ -1668,6 +1668,116 @@ body {
 .team__item {
   margin-bottom: 65px;
 }
+.promo-about__subtitle {
+  max-width: 530px;
+}
+.advantages {
+  padding-bottom: 135px;
+}
+.advantages__box-hr {
+  position: relative;
+}
+.advantages__box-hr::after, .advantages__box-hr::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #05c3de;
+}
+.advantages__box-hr::after {
+  left: 0;
+}
+.advantages__box-hr::before {
+  right: 0;
+}
+.advantages__hr {
+  border-style: dashed;
+  color: #05c3de;
+  opacity: 1;
+  border-width: 1px;
+}
+.advantages__subtitle {
+  max-width: 1000px;
+  margin-bottom: 100px;
+}
+.advantages__box-border {
+  background: linear-gradient(61.29deg, #05c3de 11.43%, rgba(5, 195, 222, 0) 91.01%), linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+  padding: 2px;
+  border-radius: 10px;
+}
+.advantages__box {
+  position: relative;
+  background: #0d0d0d;
+  padding: 45px 20px 10px;
+  min-height: 120px;
+  border-radius: 10px;
+}
+.advantages .box-border {
+  position: absolute;
+  top: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  border-radius: 50%;
+  background: linear-gradient(61.29deg, #05c3de 11.43%, rgba(5, 195, 222, 0) 91.01%), linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+}
+.advantages .box-circle {
+  background: #222224;
+}
+
+.team-about {
+  padding: 100px 0 165px;
+}
+.team-about__subtitle {
+  max-width: 530px;
+}
+.team-about .box-border {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(47.45deg, #05c3de 13.8%, rgba(5, 195, 222, 0) 87.06%);
+  cursor: pointer;
+}
+.team-about .box-border:hover {
+  transition: all 0.3s ease-in-out;
+}
+.team-about .box-border:hover .box-circle {
+  background: #fff;
+}
+.team-about .box-circle {
+  background: #fff;
+  width: 36px;
+  height: 36px;
+}
+.team-about .box-circle--gift {
+  width: 51px;
+  height: 51px;
+}
+.team-about .swiper {
+  position: relative;
+}
+.team-about .carousel-control-prev {
+  left: -16%;
+}
+.team-about .carousel-control-prev-icon,
+.team-about .carousel-control-next-icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/icons/arrow.svg");
+  width: 11px;
+  height: 8px;
+}
+.team-about .carousel-control-next {
+  right: -16%;
+}
+.team-about .carousel-control-next-icon {
+  transform: rotate(180deg);
+}
 .popup__content {
   background-color: #0d0d0d;
   border-radius: 40px;

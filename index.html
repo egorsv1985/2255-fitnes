@@ -6,13 +6,15 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.css?_v=20230514100418" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css?_v=20230514100418">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.css?_v=20230515140040" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css?_v=20230515140040">
 
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 </head>
 
@@ -61,7 +63,7 @@
 					<nav class="header__menu col-12 col-lg-9 pe-lg-5">
 						<ul class="header__list d-flex h-100 flex-column flex-lg-row justify-content-center justify-content-lg-between text-nowrap">
 							<li class="header__item py-1 py-lg-0">
-								<a href="#about" class="header__link d-block text-center">О клубе</a>
+								<a href="about-page.html" class="header__link d-block text-center">О клубе</a>
 							</li>
 
 							<li class="header__item header__item--parent py-1 py-lg-0">
@@ -462,7 +464,7 @@
 						<div class="col-12 col-lg-6">
 							<div class="about__box-content row gy-5">
 								<div class="col-12 col-sm-6 py-0">
-									<div class="about__box-border">
+									<div class="about__box-border h-100">
 										<div class="about__box">
 											<p class="about__text text fw-700 fs-16 text-center">
 												2000 кв.м современного фитнес пространства
@@ -485,8 +487,8 @@
 									</div>
 								</div>
 								<div class="col-12 col-sm-6 py-0">
-									<div class="about__box-border">
-										<div class="about__box">
+									<div class="about__box-border h-100">
+										<div class="about__box h-100">
 											<p class="about__text text fw-700 fs-16 text-center">
 												Более 15 направлений групповых программ
 											</p>
@@ -508,8 +510,8 @@
 									</div>
 								</div>
 								<div class="col-12 col-sm-6 py-0">
-									<div class="about__box-border">
-										<div class="about__box">
+									<div class="about__box-border h-100">
+										<div class="about__box h-100">
 											<p class="about__text text fw-700 fs-16 text-center">
 												Финские сауны и солярий
 											</p>
@@ -531,8 +533,8 @@
 									</div>
 								</div>
 								<div class="col-12 col-sm-6 py-0">
-									<div class="about__box-border">
-										<div class="about__box">
+									<div class="about__box-border h-100">
+										<div class="about__box h-100">
 											<p class="about__text text fw-700 fs-16 text-center">
 												Бесплатная парковка
 											</p>
@@ -1038,7 +1040,7 @@
 
 							<div class="cafe__content  row g-4 gy-lg-0">
 								<a href="#" role="button" class="cafe__btn btn col-12 col-lg-6 d-flex align-items-center mb-2 mb-sm-0" title="Посмотреть">
-									<div class="cafe__box-border box-border me-3">
+									<div class="cafe__box-border box-border me-3 ">
 										<div class="cafe__box-circle box-circle d-flex justify-content-center align-items-center">
 											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<g clip-path="url(#clip0_141_265)">
@@ -1551,9 +1553,25 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js?_v=20230514100418"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js?_v=20230514100418"></script>
-	<script src="js/app.min.js?_v=20230514100418"></script>
+
+	<div id="team-modal" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M22.4999 24.6545L32.7543 34.9117L34.7455 32.9232L24.4883 22.666L34.7455 12.4117L32.7571 10.4204L22.4999 20.6776L12.2455 10.4204L10.2571 12.4117L20.5115 22.666L10.2571 32.9204L12.2455 34.9117L22.4999 24.6545Z" fill="white" />
+					</svg>
+				</button>
+
+
+
+				<h2>Должность</h2>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js?_v=20230515140040"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js?_v=20230515140040"></script>
+	<script src="js/app.min.js?_v=20230515140040"></script>
 
 
 

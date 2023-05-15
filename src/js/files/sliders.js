@@ -49,7 +49,7 @@ function initSliders() {
   if (document.querySelector(".teamSwiper")) {
     new Swiper(".teamSwiper", {
       // задаем количество слайдов, которые будут показываться одновременно
-      slidesPerView: 3,
+      slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
       // включаем курсор в виде "руки" при наведении на слайды
@@ -63,6 +63,14 @@ function initSliders() {
         nextEl: ".carousel-control-next", // Кнопка "Next"
         prevEl: ".carousel-control-prev", // Кнопка "Prev"
       },
+      breakpoints: {
+768:{
+  slidesPerView: 2,
+},
+1100:{
+  slidesPerView: 3,
+},
+      }
     });
   }
 }

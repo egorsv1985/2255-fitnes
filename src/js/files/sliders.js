@@ -54,14 +54,11 @@ function initSliders() {
       loop: true,
       // включаем курсор в виде "руки" при наведении на слайды
       grabCursor: true,
-      // включаем использование клавиатуры для навигации по слайдам
-      keyboard: {
-        enabled: true,
-      },
+      
       // включаем кнопки "вперед" и "назад" для навигации по слайдам
       navigation: {
-        nextEl: ".carousel-control-next", // Кнопка "Next"
-        prevEl: ".carousel-control-prev", // Кнопка "Prev"
+        nextEl: ".swiper-button-next", // Кнопка "Next"
+        prevEl: ".swiper-button-prev", // Кнопка "Prev"
       },
       breakpoints: {
 768:{

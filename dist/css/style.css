@@ -1839,6 +1839,11 @@ body {
 .vacansies .form__label--bg {
   background: url("../img/icons/file-paper.svg") left center/17px 17px no-repeat;
 }
+@media only screen and (max-width: 575px) {
+  .vacansies .form__label--bg {
+    background-image: none;
+  }
+}
 .vacansies .form__textarea {
   background-color: #fff;
   border-radius: 5px;

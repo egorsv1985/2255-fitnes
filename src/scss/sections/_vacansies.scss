@@ -94,6 +94,9 @@
       &--bg {
         background: url("@img/icons/file-paper.svg") left center / 17px 17px
           no-repeat;
+		  @include media (max, sm) {
+			background-image: none;
+		  }
       }
     }
     // .form__textarea

@@ -17,7 +17,7 @@ EffectFade, Lazy, Manipulation
 
 // Стили Swiper
 // Базовые стили
-import "../../scss/base/swiper.scss";
+
 // Полный набор стилей из scss/libs/swiper.scss
 // import "../../scss/libs/swiper.scss";
 // Полный набор стилей из node_modules
@@ -54,20 +54,20 @@ function initSliders() {
       loop: true,
       // включаем курсор в виде "руки" при наведении на слайды
       grabCursor: true,
-      
+
       // включаем кнопки "вперед" и "назад" для навигации по слайдам
       navigation: {
-        nextEl: ".swiper-button-next", // Кнопка "Next"
-        prevEl: ".swiper-button-prev", // Кнопка "Prev"
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
       breakpoints: {
-768:{
-  slidesPerView: 2,
-},
-1100:{
-  slidesPerView: 3,
-},
-      }
+        768: {
+          slidesPerView: 2,
+        },
+        1100: {
+          slidesPerView: 3,
+        },
+      },
     });
   }
 }

@@ -21,54 +21,49 @@
     
 
       <form action="#" class="popup__form form">
-        <div class="form__body">
-          <div class="form__box">
+        <div class="form__body d-flex flex-column">
+          <div class="form__box position-relative mb-3">
             <input
               type="text"
               id="name"
               name="form[]"
               data-error="Ошибка"
               placeholder=""
-              class="form__input"
+              class="form__input w-100 p-3"
               required
             />
-            <label for="name" class="form__label">Имя</label>
+            <label for="name" class="form__label position-absolute fs-14"
+              >Ваше имя</label
+            >
           </div>
-          <div class="form__box">
+          <div class="form__box position-relative mb-3">
             <input
               type="tel"
               id="tel"
               name="form[]"
               data-error="Ошибка"
               placeholder=""
-              class="form__input"
+              class="form__input w-100 p-3"
               required
             />
-            <label for="tel" class="form__label">Ваш телефон</label>
+            <label for="tel" class="form__label position-absolute fs-14"
+              >Телефон</label
+            >
           </div>
-          <button type="submit" class="form__btn btn">Отправить</button>
+         
+          <button
+            type="submit"
+            class="form__btn btn btn fs-16 fw-600 px-2 py-3 btn-primary btn-sm text-uppercase"
+          >
+          Отправить
+          </button>
         </div>
+       
       </form>
     </div>
   </div>
 </div>
-<div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalLabel">Заказать звонок</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-    </div>
-    <div class="modal-body">
-      ...
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-      <button type="button" class="btn btn-primary">Сохранить изменения</button>
-    </div>
-    </div>
-  </div>
-</div>
+
 
 <div id="team-modal" aria-hidden="true" class="popup">
   <div class="popup__wrapper">

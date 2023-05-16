@@ -212,8 +212,9 @@
            
             
           </div>
+      
         </div>
-        <button class="carousel-control-prev swiper-button-prev">
+        <div class="carousel-control-prev ">
           <span class="team-about__box-border box-border">
             <span
               class="team-about__box-circle box-circle d-flex justify-content-center align-items-center"
@@ -224,8 +225,8 @@
               ></span>
             </span>
           </span>
-        </button>
-        <button class="carousel-control-next swiper-button-next">
+        </div>
+        <div class="carousel-control-next ">
           <span class="team-about__box-border box-border">
             <span
               class="team-about__box-circle box-circle d-flex justify-content-center align-items-center"
@@ -236,8 +237,34 @@
               ></span>
             </span>
           </span>
-        </button>
+        </div>
       </div>
     </div>
   </div>
 </section>
+<script>
+  var swiper = new Swiper(".teamSwiper", {
+   // задаем количество слайдов, которые будут показываться одновременно
+   slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        // включаем курсор в виде "руки" при наведении на слайды
+        grabCursor: true,
+  
+        // включаем кнопки "вперед" и "назад" для навигации по слайдам
+        navigation: {
+          nextEl: ".carousel-control-next ",
+          prevEl: ".carousel-control-prev",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+          1100: {
+            slidesPerView: 3,
+          },
+        },
+      
+  });
+ 
+ </script>

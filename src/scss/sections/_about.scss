@@ -24,6 +24,8 @@
   // .about__box-border
   &__box-border {
     &--big {
+      border-radius: 50%;
+    
       background: linear-gradient(
           61.29deg,
           #05c3de 11.43%,
@@ -34,13 +36,16 @@
           rgba(255, 255, 255, 0.05),
           rgba(255, 255, 255, 0.05)
         );
-      padding: 2px;
+      
+      
+
+
       position: absolute;
       top: 59%;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: -2;
-      border-radius: 50%;
+
       @include wh(502px);
     }
     &--center {
@@ -54,7 +59,7 @@
           rgba(255, 255, 255, 0.05),
           rgba(255, 255, 255, 0.05)
         );
-      padding: 2px;
+      padding: 1px;
       position: absolute;
       top: 59%;
       left: 50%;
@@ -79,12 +84,12 @@
     &--big {
       border-radius: 50%;
       background: $accentColor;
-      @include wh(498px);
+      @include wh(500px);
     }
     &--center {
       border-radius: 50%;
       background: $accentColor;
-      @include wh(344px);
+      @include wh(348px);
     }
   }
 
@@ -105,7 +110,7 @@
         rgba(255, 255, 255, 0.05),
         rgba(255, 255, 255, 0.05)
       );
-    padding: 2px;
+    padding: 1px;
 
     border-radius: 10px;
   }
@@ -135,7 +140,7 @@
         rgba(255, 255, 255, 0.05),
         rgba(255, 255, 255, 0.05)
       );
-    padding: 2px;
+    padding: 1px;
 
     border-radius: 10px;
   }

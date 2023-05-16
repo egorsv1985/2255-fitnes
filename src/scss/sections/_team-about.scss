@@ -35,9 +35,9 @@
   }
   .box-circle {
     background: $secondColor;
-    @include wh(36px);
+    @include wh(38px);
     &--gift {
-      @include wh(51px);
+      @include wh(53px);
     }
   }
   .swiper {

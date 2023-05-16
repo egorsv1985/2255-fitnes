@@ -113,9 +113,9 @@
   }
   .box-circle {
     background: $thirdColor;
-    @include wh(36px);
+    @include wh(38px);
     &--gift {
-      @include wh(51px);
+      @include wh(53px);
     }
   }
    // .promo__box-img

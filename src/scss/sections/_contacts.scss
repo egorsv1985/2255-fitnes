@@ -146,10 +146,10 @@
 
   .box-circle {
     &--big {
-      @include wh(482px);
+      @include wh(484px);
     }
     &--center {
-      @include wh(334px);
+      @include wh(336px);
     }
   }
 &__bottom{

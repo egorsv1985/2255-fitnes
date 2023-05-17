@@ -3,12 +3,7 @@
   z-index: 999;
   width: 100%;
   background-color: $accentColor;
-  // .header__wrapper
-  &__wrapper {
-  }
-  // .header__logo
-  &__logo {
-  }
+ 
   // .header__box
   &__box {
    
@@ -52,10 +47,6 @@
        
       }
     }
-  }
-
-  // .header__span
-  &__span {
   }
 
 
@@ -102,9 +93,7 @@
     list-style: none;
     position: relative;
   }
-  // .header__item
-  &__item {
-  }
+ 
   // .header__link
   &__link {
     position: relative;
@@ -136,18 +125,7 @@
       }
     }
   }
-  // .header__item--parent
-  &__item--parent {
-  }
-  // .header__list-child
-  &__list-child {
-  }
-  // .header__item-child
-  &__item-child {
-  }
-  // .header__link-child
-  &__link-child {
-  }
+  
   // .header__btn
   &__btn {
     position: relative;
@@ -177,12 +155,7 @@
       }
     }
   }
-  // .header__burger
-  &__burger {
-  }
-  // .header__social-list
-  &__social-list {
-  }
+
   // .header__social-item
   &__social-item {
     @include wh(25px);
@@ -190,7 +163,5 @@
 
     background-color: $thirdColor;
   }
-  // .header__social-link
-  &__social-link {
-  }
+  
 }

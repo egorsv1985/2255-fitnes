@@ -2120,6 +2120,7 @@ body {
   border-radius: 50%;
   background-color: #222224;
 }
+
 .footer {
   padding: 40px 0;
 }
@@ -2173,6 +2174,7 @@ body {
   background-size: cover;
   background-image: url("../img/icons/tel.svg");
 }
+
 .open .header__menu {
   left: 0;
   background: rgba(13, 13, 13, 0.9);

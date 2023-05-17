@@ -12,9 +12,7 @@
       display: none;
     }
   }
-  // .vacansies__title
-  &__title {
-  }
+
   // .vacansies__subtitle
   &__subtitle {
     max-width: 400px;
@@ -29,12 +27,8 @@
         rgba(255, 255, 255, 0.05),
         rgba(255, 255, 255, 0.05)
       );
-    &--form {
-    }
   }
-  // .vacansies__box-border--form
-  &__box-border--form {
-  }
+
   // .vacansies__box
   &__box {
     position: relative;
@@ -69,9 +63,7 @@
       rgba(5, 195, 222, 0) 87.06%
     );
   }
-  // .vacansies__box--form
-  &__box--form {
-  }
+
   // .vacansies__form
   &__form {
     gap: 0;
@@ -79,24 +71,14 @@
     z-index: 1;
   }
   .form {
-    // .form__body
-    &__body {
-    }
-    // .form__box
-    &__box {
-    }
-    // .form__input
-    &__input {
-     
-    }
     // .form__label
     &__label {
       &--bg {
         background: url("@img/icons/file-paper.svg") left center / 17px 17px
           no-repeat;
-		  @include media (max, sm) {
-			background-image: none;
-		  }
+        @include media(max, sm) {
+          background-image: none;
+        }
       }
     }
     // .form__textarea
@@ -105,16 +87,8 @@
       border-radius: 5px;
       color: #878787;
     }
-    // .form__btn
-    &__btn {
-    }
   }
-  // .vacansies__text
-  &__text {
-  }
-  // .vacansies__box-circle
-  &__box-circle {
-  }
+
   &__content {
     .box-border {
       position: absolute;
@@ -180,7 +154,7 @@
         right: 0;
         top: 20px;
         @include wh(40px);
-		border-radius: 50%;
+        border-radius: 50%;
         background: linear-gradient(
             61.29deg,
             #05c3de 11.43%,

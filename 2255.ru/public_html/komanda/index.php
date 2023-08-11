@@ -59,7 +59,8 @@ $APPLICATION->SetTitle("Занимайся с профессионалами ");
 		"SORT_ORDER2" => "ASC",
 		"STRICT_SECTION_CHECK" => "N"
 	)
-);?><?$APPLICATION->IncludeComponent(
+);
+$APPLICATION->IncludeComponent(
 	"bitrix:news.list",
 	"vakansii",
 	Array(

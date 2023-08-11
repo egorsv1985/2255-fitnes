@@ -470,7 +470,16 @@ body.popup-show::after {
   visibility: hidden;
   pointer-events: none;
 }
-
+.cookie-popup{
+  position: fixed;
+ 
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: visibility 0.8s ease 0s;
+  visibility: hidden;
+  pointer-events: none;
+}
 .popup_show {
   z-index: 9999;
   visibility: visible;

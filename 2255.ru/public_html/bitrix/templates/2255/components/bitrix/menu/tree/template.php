@@ -2,7 +2,7 @@
 
 <?if (!empty($arResult)):?>
 
-<ul class="header__list d-flex h-100 flex-column flex-lg-row justify-content-center justify-content-lg-between text-nowrap">
+<ul class="header__list d-flex h-100 flex-column align-items-center align-content-lg-start flex-lg-row justify-content-center justify-content-lg-between text-nowrap">
 <?
 $previousLevel = 0;
 foreach($arResult as $arItem):
@@ -13,7 +13,7 @@ foreach($arResult as $arItem):
 
 	<?if ($arItem["IS_PARENT"]):?>
 			<li class="header__item header__item--parent">
-				<a href="<?=$arItem["LINK"]?>" class="header__link header__link--after pe-3"><?=$arItem["TEXT"]?></a>
+				<a href="<?=$arItem["LINK"]?>" class="header__link header__link--after pe-lg-3"><?=$arItem["TEXT"]?></a>
 				<ul class="header__list-child">
 
 	<?else:?>

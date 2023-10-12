@@ -69,7 +69,7 @@ $asset->addJs(SITE_TEMPLATE_PATH . '/script.js');
 		<? $APPLICATION->ShowPanel(); ?>
 	</div>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" id="header">
 			<div class="container">
 				<div class="header__wrapper py-3 px-xl-0 row h-100 text-nowrap justify-content-between align-items-center gy-4 gx-3 gx-lg-0">
 					<div class="col-4 col-md-3 col-lg-3">
@@ -77,7 +77,7 @@ $asset->addJs(SITE_TEMPLATE_PATH . '/script.js');
 							<img src="<?= SITE_TEMPLATE_PATH; ?>/img/icons/logo.svg" alt="2255 Fitness" class="mw-100 logo__img" />
 						</a>
 					</div>
-					<div class="col-5 col-md-3 col-lg-2">
+					<div class="col-5 col-md-3 col-lg-2 offset-1">
 						<a href="https://yandex.by/profile/222162440489 " class="header__box header__box--map fs-14 fw-400 position-relative">
 							<span class="header__span d-block">Тушинская, 17 </span>
 							<span class="header__span d-block">ТЦ Праздник 5 этаж</span>
@@ -95,7 +95,7 @@ $asset->addJs(SITE_TEMPLATE_PATH . '/script.js');
 							<span class="header__span d-block">Сб-Вс 8:30-22:00</span>
 						</div>
 					</div>
-					<div class="col-2 col-lg-2 d-none d-md-block">
+					<div class="col-2 d-none d-md-block">
 						<div class="header__box header__box--tel fs-14 fw-400 position-relative">
 							<a href="tel:+74992830153" class="d-block">
 								<span class="header__span">+7 (499) 283-01-53 </span>
@@ -105,8 +105,8 @@ $asset->addJs(SITE_TEMPLATE_PATH . '/script.js');
 							</a>
 						</div>
 					</div>
-					<div class="col-1">
-						<a href="#" role="button" class="header__btn header__btn--enter btn fs-14 fw-600 btn-primary btn-sm py-2 d-none d-md-block"><span>Вход</span></a>
+					<div class="col-1 d-none d-md-block">
+						<a href="#" role="button" class="header__btn header__btn--enter btn fs-14 fw-600 btn-primary btn-sm py-2 "><span>Вход</span></a>
 					</div>
 
 					<nav class="header__menu col-12 col-lg-9 pe-lg-5">

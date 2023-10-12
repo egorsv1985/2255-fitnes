@@ -35,7 +35,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 					</div>
 					<div class="col-6 ps-5">
 						<div class="contacts__box contacts__box--metro">
-							<p class="contacts__text text fw-600 fs-14 mb-1 opacity-0">
+							<p class="contacts__text text fw-600 fs-14 mb-1 d-none">
 								Метро
 							</p>
 							<span class="contacts__span d-block">2 минуты от </span>
@@ -214,7 +214,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 				</a>
 				<small class="footer__text text fs-12 text-success d-block mt-2 mb-3">&#169 2022 ИП Овсянко<br> ИНН 502007880841</small>
 				<ul class="footer__social-list d-flex align-items-center justify-content-start gap-3 ps-0 mb-5">
-					<li class="footer__social-item rounded-circle d-flex justify-content-center align-items-center">
+					<li class="footer__social-item rounded-circle d-none justify-content-center align-items-center">
 						<a href="https://instagram.com/fitness_2255?igshid=NTc4MTIwNjQ2YQ==" class="footer__social-link social-ico-ig" target="_blank"></a>
 					</li>
 					<li class="footer__social-item rounded-circle d-flex justify-content-center align-items-center">
@@ -334,7 +334,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	</div>
 </div>
 <?if (!isset($_COOKIE['cookie']) || $_COOKIE['cookie'] != 'Y'):?>
-<a data-popup="#cookie" href="#cookie" role="button" id="cookieopen" title="Уведомление"></a>
+<a data-popup="#cookie" href="#header" role="button" id="cookieopen" title="Уведомление"></a>
 <div id="cookie" aria-hidden="true" class="cookie-popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">

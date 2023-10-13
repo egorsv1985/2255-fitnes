@@ -283,7 +283,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 					<li class="footer__item">
 						<a href="/komanda/" class="footer__link d-block text-success fs-14">Наша команда</a>
 					</li>
-					
+
 					<li class="footer__item">
 						<a href="/kontakty/" class="footer__link d-block text-success fs-14">Контакты</a>
 					</li>
@@ -303,9 +303,6 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 					<path fill-rule="evenodd" clip-rule="evenodd" d="M22.4999 24.6545L32.7543 34.9117L34.7455 32.9232L24.4883 22.666L34.7455 12.4117L32.7571 10.4204L22.4999 20.6776L12.2455 10.4204L10.2571 12.4117L20.5115 22.666L10.2571 32.9204L12.2455 34.9117L22.4999 24.6545Z" fill="white" />
 				</svg>
 			</button>
-
-
-
 			<form action="#" class="popup__form form">
 				<div class="form__body d-flex flex-column">
 					<div class="form__box position-relative mb-3">
@@ -318,7 +315,6 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 					</div>
 					<div class="form__box checkbox position-relative mb-3 form-check form-check-inline ">
 						<input type="checkbox" class="form-check-input checkbox__input m-0" value="" name="check" id="check" checked />
-
 						<label class="form-check-label checkbox__label fs-14 d-block ps-5" for="check">
 							Нажимая на кнопку, Вы даете согласие на обработку персональных
 							данных
@@ -333,39 +329,39 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 		</div>
 	</div>
 </div>
-<?if (!isset($_COOKIE['cookie']) || $_COOKIE['cookie'] != 'Y'):?>
-<a data-popup="#cookie" href="#header" role="button" id="cookieopen" title="Уведомление"></a>
-<div id="cookie" aria-hidden="true" class="cookie-popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">
-				<svg width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path fill-rule="evenodd" clip-rule="evenodd" d="M22.4999 24.6545L32.7543 34.9117L34.7455 32.9232L24.4883 22.666L34.7455 12.4117L32.7571 10.4204L22.4999 20.6776L12.2455 10.4204L10.2571 12.4117L20.5115 22.666L10.2571 32.9204L12.2455 34.9117L22.4999 24.6545Z" fill="white" />
-				</svg>
-			</button>
+<? if (!isset($_COOKIE['cookie']) || $_COOKIE['cookie'] != 'Y') : ?>
+	<button data-popup="#cookie" role="button" id="cookieopen" title="Уведомление"></button>
+	<div id="cookie" aria-hidden="true" class="cookie-popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M22.4999 24.6545L32.7543 34.9117L34.7455 32.9232L24.4883 22.666L34.7455 12.4117L32.7571 10.4204L22.4999 20.6776L12.2455 10.4204L10.2571 12.4117L20.5115 22.666L10.2571 32.9204L12.2455 34.9117L22.4999 24.6545Z" fill="white" />
+					</svg>
+				</button>
 
-			<div class="pb-2">Наш сайт использует cookies. продолжая им пользоваться, вы соглашаетесь на обработку персональных данных в соответствии с нашей <a href="#">политикой конфиденциальности</a>.</div>
-			<div class="text-center">
-				<a class="col-3 btn fs-14 fw-600 p-1 btn-primary btn-sm me-auto my-1 position-relative" href="#" data-close  onclick="javascript: document.cookie = 'cookie=Y';">
-					Принять
-				</a>
+				<div class="pb-2">Наш сайт использует cookies. продолжая им пользоваться, вы соглашаетесь на обработку персональных данных в соответствии с нашей <a href="#">политикой конфиденциальности</a>.</div>
+				<div class="text-center">
+					<a class="col-3 btn fs-14 fw-600 p-1 btn-primary btn-sm me-auto my-1 position-relative" href="#" data-close onclick="javascript: document.cookie = 'cookie=Y';">
+						Принять
+					</a>
+				</div>
+
 			</div>
-
 		</div>
 	</div>
-</div>
-<script>
-	//document.getElementById('cookieopen').click();
+	<script>
+		//document.getElementById('cookieopen').click();
 
-	function sayHi() {
-		document.getElementById('cookieopen').click();
-	}
+		function sayHi() {
+			document.getElementById('cookieopen').click();
+		}
 
-	setTimeout(function() {
-		document.getElementById('cookieopen').click();
-	}, 1000);
-</script>
-<?endif;?>
+		setTimeout(function() {
+			document.getElementById('cookieopen').click();
+		}, 1000);
+	</script>
+<? endif; ?>
 
 </body>
 
